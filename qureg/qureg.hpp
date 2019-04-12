@@ -191,6 +191,7 @@ class QubitRegister
   bool IsClassicalBit(unsigned qubit, BaseType tolerance = 1.e-13) const;
   void CollapseQubit(unsigned qubit, bool value);
   BaseType GetProbability(unsigned qubit);
+  BaseType GetStateProb(std::size_t base_index);
 
   // expectation values without state update
   void ExpectationValueX(unsigned const qubit, BaseType &sum, BaseType coeff=1.);

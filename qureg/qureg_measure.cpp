@@ -185,6 +185,38 @@ QubitRegister<Type>::BaseType QubitRegister<Type>::GetProbability(unsigned qubit
 
 
 /////////////////////////////////////////////////////////////////////////////////////////
+/// @brief Return the probability amplitude to measure the qubits in a specific state from the computational basis.
+/// @param base_index the index of the involved state (0,1,...,2^n-1) corresponding to: '0'=|0...00>, '1'=|0...01>, ..., '2^n-1'=|1...11>
+///
+/// Return the probability corresponding to the qubits being in a specific state of the computational basis.
+/// The state is left unchanged and not collapsed.
+template <class Type>
+QubitRegister<Type>::BaseType QubitRegister<Type>::GetStateProb(std::size_t base_index)
+{
+  unsigned myrank=0, nprocs=1, log2_nprocs=0;
+#ifdef INTELQS_HAS_MPI
+  myrank = openqu::mpi::Environment::rank();
+  nprocs = openqu::mpi::Environment::size();
+  log2_nprocs = openqu::ilog2(nprocs);
+#endif
+
+  BaseType local_P = 0.;
+  std::size_t whereid = base_index / LocalSize();
+  if (whereid == myrank)
+  {
+      std::size_t lclind = (base_index % LocalSize());
+      local_P = std::norm(state[lclind]);
+  }
+
+  BaseType global_P = local_P;
+#ifdef INTELQS_HAS_MPI
+  MPI_Bcast(&global_P, 1, MPI_DOUBLE, whereid, MPI_COMM_WORLD);
+#endif
+  return global_P;
+}
+
+
+/////////////////////////////////////////////////////////////////////////////////////////
 /// @brief ?? explanation needed ??
 template <class Type>
 bool QubitRegister<Type>::GetClassicalValue(unsigned qubit, BaseType tolerance) const

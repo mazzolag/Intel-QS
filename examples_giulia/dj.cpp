@@ -21,11 +21,7 @@ void dj(int n, RandomGen &rng) {
 
     // Construct the circuit
     // creating registers
-    QubitRegister<ComplexDP> qureg(n+1, "base", 0);
-    // put all qubits to an equal superposition state
-    for (int q=0; q<n+1; ++q) {
-        qureg.ApplyHadamard(q);
-    }
+    QubitRegister<ComplexDP> qureg(n+1, "++++", 0); // initialize all qubits to an equal superposition state by the use of "++++"
     qureg.ApplyPauliZ(n); // necessary in order to apply the phase oracle
 
     //implement the bit oracle
@@ -50,7 +46,7 @@ void dj(int n, RandomGen &rng) {
     }
 
     // measure the qubits
-    double realprob = qureg.GetProbability(0) + qureg.GetProbability(n); // get the probability amplitude of state |00.....0>
+    double realprob = qureg.GetStateProb(0) + qureg.GetStateProb(1ll << n); // get the probability amplitude of state |00.....0>
     // NOTE: If the algorithm runs with real hardware backend, need to change the above line and measure all qubits separately.
 
     //int prob = int(realprob);
@@ -106,9 +102,9 @@ int main(int argc, char **argv)
 
     std::vector<qInt> factors;
 
-    rng.setSeed(0);
+    //rng.setSeed(0);
     for (int i = 0; i < nrep; ++i) {	
-	    rng.setSeed(0);
+	    //rng.setSeed(0);
 	    // syncQuESTEnv(env);
         auto start = std::chrono::steady_clock::now();
         dj(n, rng);
