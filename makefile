@@ -19,6 +19,7 @@ all:
 	cd util/tests; $(MAKE)
 	cd qureg; $(MAKE)
 	cd tests; $(MAKE)
+	cd examples_giulia; $(MAKE)
 	cd interface; $(MAKE)
 
 clean:
@@ -26,6 +27,7 @@ clean:
 	cd util/tests; $(MAKE) clean
 	cd qureg; $(MAKE) clean
 	cd tests; $(MAKE) clean
+	cd examples_giulia; $(MAKE) clean
 	cd interface; $(MAKE) clean
 	rm -fr ./build/
 
@@ -34,6 +36,7 @@ depend:
 	cd util/tests; $(MAKE) depend
 	cd qureg; $(MAKE) depend
 	cd tests; $(MAKE) depend
+	cd examples_giulia; $(MAKE) depend
 	cd interface; $(MAKE) depend
 
 sdk-release: all sdk-copy-sources sdk-copy-libs sdk-copy-samples sdk-gen-docs 

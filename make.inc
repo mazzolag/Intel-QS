@@ -18,17 +18,18 @@ bigmpi = 0
 
 HOST = $(shell hostname)
 
-CC = g++
+# CC = g++
 CC = CC -mkl -no-ipo
-CC = mpicxx
-CC = mpiicpc
+# CC = mpicxx
+# CC = mpiicpc
 
 OPTS = -g -O3
+#OPTS = -g -O0
 VECS = -qopt-report-phase=vec -qopt-report=2
 DEFS = -DUSE_MM_MALLOC -DSTANDALONE -DINTELQS_HAS_MPI -DMKL_ILP64
 
-BIGMPI_LIB = /opt/bigmpi/lib/libbigmpi.a
-BIGMPI_INC = -I/opt/bigmpi/include
+# BIGMPI_LIB = /opt/bigmpi/lib/libbigmpi.a
+# BIGMPI_INC = -I/opt/bigmpi/include
 
 CFLAGS = ${OPTS} ${DEFS} \
          -Wall -std=c++11 -qopenmp #-restrict \
