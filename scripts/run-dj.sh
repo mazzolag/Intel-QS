@@ -4,10 +4,9 @@
 # - nodes are preallocated with salloc
 # - and the file is executed as just run.sh (not sbatch run.sh)
 #SBATCH --nodes=16
-#SBATCH --ntasks-per-node=2
 #SBATCH --constraint=mc
-#SBATCH --partiition=normal
-#SBATCH --time=400
+#SBATCH --partition=normal
+#SBATCH --time=100
 
 # loading necessary modules
 echo "============================="

@@ -11,9 +11,9 @@ void dj(int n, RandomGen &rng) {
     // Create a type of function (either constant or balanced) at random (oracle)
     int oracleType = (int) rng.sampleUniformly(0,1);
     int oracleValue = (int) rng.sampleUniformly(0,1);
-    std::cout << "oracleType = " << oracleType << ", oracleValue = " << oracleValue << std::endl;
-    std::string type = oracleType == 0 ? "a constant valued function" : "a balanced function";
-    std::cout << "The oracle returns " << type << std::endl;
+    //std::cout << "oracleType = " << oracleType << ", oracleValue = " << oracleValue << std::endl;
+    //std::string type = oracleType == 0 ? "a constant valued function" : "a balanced function";
+    //std::cout << "The oracle returns " << type << std::endl;
 
     // choose a balanced function at random and represent it by the long long value f
     qInt f = rng.sampleUniformly(1, (1ll << n) - 1);
@@ -52,12 +52,12 @@ void dj(int n, RandomGen &rng) {
     //int prob = int(realprob);
 
 
-    if (realprob > 0.5){
-        std::cout << "The DJ Algorithm finds the function f to be constant with value " << oracleValue << std::endl;
-    }
-    else {
-        std::cout << "The DJ Algorithm finds the function f to be balanced." << std::endl;
-    }
+    //if (realprob > 0.5){
+    //    std::cout << "The DJ Algorithm finds the function f to be constant with value " << oracleValue << std::endl;
+    //}
+    //else {
+    //    std::cout << "The DJ Algorithm finds the function f to be balanced." << std::endl;
+    //}
 
 }  
 
@@ -102,13 +102,13 @@ int main(int argc, char **argv)
 
     std::vector<qInt> factors;
 
-    //rng.setSeed(0);
+    rng.setSeed(0);
     for (int i = 0; i < nrep; ++i) {	
-	    //rng.setSeed(0);
-	    // syncQuESTEnv(env);
+	    // rng.setSeed(0);
+        MPI_Barrier(MPI_COMM_WORLD);
         auto start = std::chrono::steady_clock::now();
         dj(n, rng);
-        // syncQuESTEnv(env);
+        MPI_Barrier(MPI_COMM_WORLD);
         auto end = std::chrono::steady_clock::now();
         auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count();
         times.push_back(duration);

@@ -25,12 +25,15 @@ ifeq ($(bigmpi),1)
  LDFLAGS := ${BIGMPI_LIB} ${LDFLAGS}
 endif
 
-EXECS := dj.exe
+EXECS := dj.exe\
+	 rqc.exe
 
 all: ${EXECS}
 
 dj.exe: dj.o makefile ../qureg/qHiPSTER.a
 	$(CC) -o dj.exe ${CFLAGS} dj.o ../qureg/qHiPSTER.a ${LDFLAGS}
+rqc.exe: rqc.o makefile ../qureg/qHiPSTER.a
+	$(CC) -o rqc.exe ${CFLAGS} rqc.o ../qureg/qHiPSTER.a ${LDFLAGS}
 
 %.o : %.cpp makefile
 	$(CC) ${CFLAGS} ${INC} ${LDFLAGS} -c $< -o $@
