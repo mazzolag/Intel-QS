@@ -100,7 +100,6 @@ int main(int argc, char **argv)
     std::vector<long long> times;
     times.reserve(nrep);
 
-    std::vector<qInt> factors;
 
     rng.setSeed(0);
     for (int i = 0; i < nrep; ++i) {	

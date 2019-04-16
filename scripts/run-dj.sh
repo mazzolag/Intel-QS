@@ -6,7 +6,7 @@
 #SBATCH --nodes=16
 #SBATCH --constraint=mc
 #SBATCH --partition=normal
-#SBATCH --time=100
+#SBATCH --time=300
 
 # loading necessary modules
 echo "============================="
@@ -37,12 +37,13 @@ number_of_nodes=(1 2 4 8 16)
 ranks_per_node=2
 
 n_repetitions=10
-N=(16 19 22 24 26 27 28 29 30 31 33)
+#N=(16 19 22 24 26 27 28 29 30 31 33)
+N=(30 31 33 35)
 
 export OMP_NUM_THREADS=18
 
 path_to_executable="./examples_giulia/dj.exe"
-path_to_file="./benchmarks/dj-benchmark.txt"
+path_to_file="./benchmarks/dj-benchmark-part2.txt"
 
 # iterate over the values of argument N
 for arg in "${N[@]}"
