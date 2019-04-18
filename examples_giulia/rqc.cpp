@@ -26,7 +26,23 @@ void applyGate(QubitRegister<ComplexDP> &qr, const int qubit, const std::string 
     }
 }
 
-void randomQuantumCircuit(int n, int d, ifstream &file, RandomGen &rng) {
+// measure a qubit and collapse the wavefunction
+int measureQubit(QubitRegister<ComplexDP> &qr, const int qubit){
+    double prob1 = qr.GetProbability(qubit);  // probability of qubit being in state |1>
+    double prob0 = 1.0 - prob1;  // probability of qubit being in state |0>
+
+    // collapse the wavefunction
+    RandomGen rng;
+    int outcome = (int) rng.sampleDiscrete(prob0, prob1);
+    qr.CollapseQubit(qubit, outcome);
+
+    // normalize the collapsed wavefunction
+    qr.Normalize();
+    
+    return outcome;
+}
+
+void randomQuantumCircuit(int n, int d, ifstream &file) {
     // set th input position indicator to the first element of file
     file.seekg(0);
 
@@ -65,9 +81,8 @@ void randomQuantumCircuit(int n, int d, ifstream &file, RandomGen &rng) {
     }
 
     // measure the qubits
-    int value = (int) rng.sampleUniformly(0,1);
-    for (int l = 0; l < n; ++l) {
-        qureg.CollapseQubit(l, value);
+    for (int j = 0; j < n; ++j){
+        measureQubit(qureg, j);
     }
 
 }
@@ -137,7 +152,6 @@ int main(int argc, char **argv){
     const char * pf = std::getenv("PREFIX");
     if (pf){
         std::string s(pf, 5);
-    
         if (s == "scrpt") {
             prefix = "./";
         }
@@ -158,14 +172,11 @@ int main(int argc, char **argv){
     std::vector<long long> times;
     times.reserve(nrep);
 
-    // create RNG
-    RandomGen rng;
-
     // run the ciruit
     for (int i = 0; i < nrep; ++i) {
         MPI_Barrier(MPI_COMM_WORLD);
         auto start = std::chrono::steady_clock::now();
-        randomQuantumCircuit(n, d, inFile, rng);
+        randomQuantumCircuit(n, d, inFile);
         MPI_Barrier(MPI_COMM_WORLD);
         auto end = std::chrono::steady_clock::now();
         auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count();

@@ -89,6 +89,11 @@ struct RandomGen {
         std::uniform_int_distribution<qInt> distribution(low, high);
         return distribution(mt);
     }
+
+    qInt sampleDiscrete(double p0, double p1){
+        std::discrete_distribution<qInt> distribution({p0, p1});
+        return distribution(mt);
+    }
     void setSeed (unsigned long int sd){
         seed = sd;
         mt.seed(seed);
