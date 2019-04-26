@@ -1,0 +1,723 @@
+=============================
+  LOADING MODULES
+=============================
+=============================
+  BUILDING AND COMPILATION
+=============================
+cd util; make clean
+make[1]: Entering directory '/scratch/snx3000/mazzolag/qsim/Intel-QS/util'
+rm -f *.o *.s *.d *~
+make[1]: Leaving directory '/scratch/snx3000/mazzolag/qsim/Intel-QS/util'
+cd util/tests; make clean
+make[1]: Entering directory '/scratch/snx3000/mazzolag/qsim/Intel-QS/util/tests'
+rm -f *.o *.s *.d *~ *.exe
+make[1]: Leaving directory '/scratch/snx3000/mazzolag/qsim/Intel-QS/util/tests'
+cd qureg; make clean
+make[1]: Entering directory '/scratch/snx3000/mazzolag/qsim/Intel-QS/qureg'
+rm -f *.o *.s *.d *~ ./qHiPSTER.a
+make[1]: Leaving directory '/scratch/snx3000/mazzolag/qsim/Intel-QS/qureg'
+cd tests; make clean
+make[1]: Entering directory '/scratch/snx3000/mazzolag/qsim/Intel-QS/tests'
+rm -f *.o *.s *.d *~ benchgates.exe testgates.exe qft_test.exe expect_value_test.exe getting_started_example.exe single_qubit_gates_test.exe noisy_circuit_test.exe
+make[1]: Leaving directory '/scratch/snx3000/mazzolag/qsim/Intel-QS/tests'
+cd examples_giulia; make clean
+make[1]: Entering directory '/scratch/snx3000/mazzolag/qsim/Intel-QS/examples_giulia'
+rm -f *.o *.s *.d *~ dj.exe rqc.exe
+make[1]: Leaving directory '/scratch/snx3000/mazzolag/qsim/Intel-QS/examples_giulia'
+cd interface; make clean
+make[1]: Entering directory '/scratch/snx3000/mazzolag/qsim/Intel-QS/interface'
+rm -f *.o *.s *.d *~ qasm_interface.exe
+make[1]: Leaving directory '/scratch/snx3000/mazzolag/qsim/Intel-QS/interface'
+rm -fr ./build/
+cd util; make
+make[1]: Entering directory '/scratch/snx3000/mazzolag/qsim/Intel-QS/util'
+CC -mkl -no-ipo -g -O3 -DUSE_MM_MALLOC -DSTANDALONE -DINTELQS_HAS_MPI -DMKL_ILP64 -Wall -std=c++11 -qopenmp   -I./ -I../ -c mpi_wrapper.cpp -o mpi_wrapper.o
+CC -mkl -no-ipo -g -O3 -DUSE_MM_MALLOC -DSTANDALONE -DINTELQS_HAS_MPI -DMKL_ILP64 -Wall -std=c++11 -qopenmp   -I./ -I../ -c mpi_exception.cpp -o mpi_exception.o
+CC -mkl -no-ipo -g -O3 -DUSE_MM_MALLOC -DSTANDALONE -DINTELQS_HAS_MPI -DMKL_ILP64 -Wall -std=c++11 -qopenmp   -I./ -I../ -c mpi.cpp -o mpi.o
+CC -mkl -no-ipo -g -O3 -DUSE_MM_MALLOC -DSTANDALONE -DINTELQS_HAS_MPI -DMKL_ILP64 -Wall -std=c++11 -qopenmp   -I./ -I../ -c utils.cpp -o utils.o
+CC -mkl -no-ipo -g -O3 -DUSE_MM_MALLOC -DSTANDALONE -DINTELQS_HAS_MPI -DMKL_ILP64 -Wall -std=c++11 -qopenmp   -I./ -I../ -c openmp_affinity_noomp.cpp -o openmp_affinity_noomp.o
+CC -mkl -no-ipo -g -O3 -DUSE_MM_MALLOC -DSTANDALONE -DINTELQS_HAS_MPI -DMKL_ILP64 -Wall -std=c++11 -qopenmp   -I./ -I../ -c openmp_affinity_corei7.cpp -o openmp_affinity_corei7.o
+make[1]: Leaving directory '/scratch/snx3000/mazzolag/qsim/Intel-QS/util'
+cd util/tests; make
+make[1]: Entering directory '/scratch/snx3000/mazzolag/qsim/Intel-QS/util/tests'
+CC -mkl -no-ipo -g -O3 -DUSE_MM_MALLOC -DSTANDALONE -DINTELQS_HAS_MPI -DMKL_ILP64 -Wall -std=c++11 -qopenmp   -I./ -I../ -c mpi_exception_test.cpp -o mpi_exception_test.o
+CC -mkl -no-ipo -g -O3 -DUSE_MM_MALLOC -DSTANDALONE -DINTELQS_HAS_MPI -DMKL_ILP64 -Wall -std=c++11 -qopenmp   -I./ -I../ -c mpi_test1.cpp -o mpi_test1.o
+CC -mkl -no-ipo -g -O3 -DUSE_MM_MALLOC -DSTANDALONE -DINTELQS_HAS_MPI -DMKL_ILP64 -Wall -std=c++11 -qopenmp   -I./ -I../ -c omp_test1.cpp -o omp_test1.o
+CC -mkl -no-ipo -g -O3 -DUSE_MM_MALLOC -DSTANDALONE -DINTELQS_HAS_MPI -DMKL_ILP64 -Wall -std=c++11 -qopenmp   -I./ -I../ -c naive_integral_base.cpp -o naive_integral_base.o
+CC -mkl -no-ipo -g -O3 -DUSE_MM_MALLOC -DSTANDALONE -DINTELQS_HAS_MPI -DMKL_ILP64 -Wall -std=c++11 -qopenmp   -I./ -I../ -c omp_integral_base.cpp -o omp_integral_base.o
+CC -mkl -no-ipo -g -O3 -DUSE_MM_MALLOC -DSTANDALONE -DINTELQS_HAS_MPI -DMKL_ILP64 -Wall -std=c++11 -qopenmp   -L/opt/intel/compilers_and_libraries_2018.2.199/linux/mkl/lib/intel64 -lmkl_cdft_core -lmkl_intel_ilp64 -lmkl_core -lmkl_intel_thread -lmkl_blacs_intelmpi_ilp64 -lpthread -lirc omp_test1.o ../openmp_affinity_corei7.o ../openmp_affinity_noomp.o -o omp_test1.exe
+CC -mkl -no-ipo -g -O3 -DUSE_MM_MALLOC -DSTANDALONE -DINTELQS_HAS_MPI -DMKL_ILP64 -Wall -std=c++11 -qopenmp   -L/opt/intel/compilers_and_libraries_2018.2.199/linux/mkl/lib/intel64 -lmkl_cdft_core -lmkl_intel_ilp64 -lmkl_core -lmkl_intel_thread -lmkl_blacs_intelmpi_ilp64 -lpthread -lirc naive_integral_base.o -o naive_integral_base.exe
+CC -mkl -no-ipo -g -O3 -DUSE_MM_MALLOC -DSTANDALONE -DINTELQS_HAS_MPI -DMKL_ILP64 -Wall -std=c++11 -qopenmp   -L/opt/intel/compilers_and_libraries_2018.2.199/linux/mkl/lib/intel64 -lmkl_cdft_core -lmkl_intel_ilp64 -lmkl_core -lmkl_intel_thread -lmkl_blacs_intelmpi_ilp64 -lpthread -lirc mpi_test1.o ../mpi_wrapper.o ../mpi_exception.o -o mpi_test1.exe
+CC -mkl -no-ipo -g -O3 -DUSE_MM_MALLOC -DSTANDALONE -DINTELQS_HAS_MPI -DMKL_ILP64 -Wall -std=c++11 -qopenmp   -L/opt/intel/compilers_and_libraries_2018.2.199/linux/mkl/lib/intel64 -lmkl_cdft_core -lmkl_intel_ilp64 -lmkl_core -lmkl_intel_thread -lmkl_blacs_intelmpi_ilp64 -lpthread -lirc mpi_exception_test.o ../mpi_exception.o ../mpi_wrapper.o -o mpi_exception_test.exe
+CC -mkl -no-ipo -g -O3 -DUSE_MM_MALLOC -DSTANDALONE -DINTELQS_HAS_MPI -DMKL_ILP64 -Wall -std=c++11 -qopenmp   -L/opt/intel/compilers_and_libraries_2018.2.199/linux/mkl/lib/intel64 -lmkl_cdft_core -lmkl_intel_ilp64 -lmkl_core -lmkl_intel_thread -lmkl_blacs_intelmpi_ilp64 -lpthread -lirc omp_integral_base.o ../openmp_affinity_corei7.o ../openmp_affinity_noomp.o -o omp_integral_base.exe
+make[1]: Leaving directory '/scratch/snx3000/mazzolag/qsim/Intel-QS/util/tests'
+cd qureg; make
+make[1]: Entering directory '/scratch/snx3000/mazzolag/qsim/Intel-QS/qureg'
+CC -mkl -no-ipo -g -O3 -DUSE_MM_MALLOC -DSTANDALONE -DINTELQS_HAS_MPI -DMKL_ILP64 -Wall -std=c++11 -qopenmp   -I./ -I../ -c qureg_utils.cpp -o qureg_utils.o
+CC -mkl -no-ipo -g -O3 -DUSE_MM_MALLOC -DSTANDALONE -DINTELQS_HAS_MPI -DMKL_ILP64 -Wall -std=c++11 -qopenmp   -I./ -I../ -c qureg_applyctrl1qubitgate.cpp -o qureg_applyctrl1qubitgate.o
+CC -mkl -no-ipo -g -O3 -DUSE_MM_MALLOC -DSTANDALONE -DINTELQS_HAS_MPI -DMKL_ILP64 -Wall -std=c++11 -qopenmp   -I./ -I../ -c qureg_measure.cpp -o qureg_measure.o
+CC -mkl -no-ipo -g -O3 -DUSE_MM_MALLOC -DSTANDALONE -DINTELQS_HAS_MPI -DMKL_ILP64 -Wall -std=c++11 -qopenmp   -I./ -I../ -c qureg_permute.cpp -o qureg_permute.o
+CC -mkl -no-ipo -g -O3 -DUSE_MM_MALLOC -DSTANDALONE -DINTELQS_HAS_MPI -DMKL_ILP64 -Wall -std=c++11 -qopenmp   -I./ -I../ -c qureg_init.cpp -o qureg_init.o
+CC -mkl -no-ipo -g -O3 -DUSE_MM_MALLOC -DSTANDALONE -DINTELQS_HAS_MPI -DMKL_ILP64 -Wall -std=c++11 -qopenmp   -I./ -I../ -c qureg_applytoffoli.cpp -o qureg_applytoffoli.o
+CC -mkl -no-ipo -g -O3 -DUSE_MM_MALLOC -DSTANDALONE -DINTELQS_HAS_MPI -DMKL_ILP64 -Wall -std=c++11 -qopenmp   -I./ -I../ -c highperfkernels.cpp -o highperfkernels.o
+CC -mkl -no-ipo -g -O3 -DUSE_MM_MALLOC -DSTANDALONE -DINTELQS_HAS_MPI -DMKL_ILP64 -Wall -std=c++11 -qopenmp   -I./ -I../ -c qureg_apply1qubitgate.cpp -o qureg_apply1qubitgate.o
+CC -mkl -no-ipo -g -O3 -DUSE_MM_MALLOC -DSTANDALONE -DINTELQS_HAS_MPI -DMKL_ILP64 -Wall -std=c++11 -qopenmp   -I./ -I../ -c qureg_apply2qubitgate.cpp -o qureg_apply2qubitgate.o
+CC -mkl -no-ipo -g -O3 -DUSE_MM_MALLOC -DSTANDALONE -DINTELQS_HAS_MPI -DMKL_ILP64 -Wall -std=c++11 -qopenmp   -I./ -I../ -c qureg_applydiag.cpp -o qureg_applydiag.o
+CC -mkl -no-ipo -g -O3 -DUSE_MM_MALLOC -DSTANDALONE -DINTELQS_HAS_MPI -DMKL_ILP64 -Wall -std=c++11 -qopenmp   -I./ -I../ -c qureg_fusion.cpp -o qureg_fusion.o
+CC -mkl -no-ipo -g -O3 -DUSE_MM_MALLOC -DSTANDALONE -DINTELQS_HAS_MPI -DMKL_ILP64 -Wall -std=c++11 -qopenmp   -I./ -I../ -c qureg_applyswap.cpp -o qureg_applyswap.o
+CC -mkl -no-ipo -g -O3 -DUSE_MM_MALLOC -DSTANDALONE -DINTELQS_HAS_MPI -DMKL_ILP64 -Wall -std=c++11 -qopenmp   -I./ -I../ -c qureg_version.cpp -o qureg_version.o
+CC -mkl -no-ipo -g -O3 -DUSE_MM_MALLOC -DSTANDALONE -DINTELQS_HAS_MPI -DMKL_ILP64 -Wall -std=c++11 -qopenmp   -I./ -I../ -c qureg_expectval.cpp -o qureg_expectval.o
+qureg_utils.cpp(266): warning #3948: simd pragma has been deprecated, and will be removed in a future release.  Please refer to release notes for details and recommended alternatives
+    #pragma simd reduction(+ : entropy, avgselfinfo, m2, m3, m4, m5, m6, m7, m8, m9, m10)
+            ^
+
+[30;43mTODO[0m - Second argument of Print() is not used!
+[30;43mTODO[0m - Second argument of Print() is not used!
+[30;43mTODO[0m - Second argument of Print() is not used!
+[30;43mTODO[0m - Way to fix problem with X and Y specializaion
+[30;43mTODO[0m - Insert Loop_SN specialization for this case
+[30;43mTODO[0m - Way to fix problem with X and Y specializaion
+[30;43mTODO[0m - Insert Loop_SN specialization for this case
+[30;43mTODO[0m - Way to fix problem with X and Y specializaion
+[30;43mTODO[0m - Insert Loop_SN specialization for this case
+[30;43mTODO[0m - Add diagonal special case
+[30;43mTODO[0m - Add diagonal special case
+[30;43mTODO[0m - Fix problem when coming here from controlled gate
+[30;43mTODO[0m - Fix problem when coming here from controlled gate
+[30;43mTODO[0m - Add diagonal special case
+[30;43mTODO[0m - Fix problem when coming here from controlled gate
+[30;43mTODO[0m - move permutation to WaveFunctionSimulator class
+[30;43mTODO[0m - move permutation to WaveFunctionSimulator class
+[30;43mTODO[0m - move permutation to WaveFunctionSimulator class
+[30;43mTODO[0m - Not using ICC vectorization: need to rewrite in intrincics
+[30;43mTODO[0m - Allow for case where state is not aligned: need SIMD ISA for un-aligned access
+[30;43mTODO[0m - Add nthreads check to clamp to smaller number of too little work
+[30;43mTODO[0m - Generalize for AVX3 cases so we check for pos <=1 etc
+[30;43mTODO[0m - Allow for case where state is not aligned: need SIMD ISA for un-aligned access
+[30;43mTODO[0m - Add nthreads check to clamp to smaller number of too little work
+[30;43mTODO[0m - Generalize for AVX3 cases so we check for pos <=1 etc
+[30;43mTODO[0m - Allow for case where state is not aligned: need SIMD ISA for un-aligned access
+[30;43mTODO[0m - Add nthreads check to clamp to smaller number of too little work
+[30;43mTODO[0m - Generalize for AVX3 cases so we check for pos <=1 etc
+ar rcs qHiPSTER.a qureg_utils.o qureg_applyctrl1qubitgate.o qureg_measure.o qureg_permute.o qureg_init.o qureg_applytoffoli.o highperfkernels.o qureg_apply1qubitgate.o qureg_apply2qubitgate.o qureg_applydiag.o qureg_fusion.o qureg_applyswap.o qureg_version.o qureg_expectval.o ../util/utils.o ../util/mpi.o ../util/openmp_affinity_corei7.o ../util/openmp_affinity_noomp.o ../makefile
+make[1]: Leaving directory '/scratch/snx3000/mazzolag/qsim/Intel-QS/qureg'
+cd tests; make
+make[1]: Entering directory '/scratch/snx3000/mazzolag/qsim/Intel-QS/tests'
+CC -mkl -no-ipo -g -O3 -DUSE_MM_MALLOC -DSTANDALONE -DINTELQS_HAS_MPI -DMKL_ILP64 -Wall -std=c++11 -qopenmp   -I./ -I../ -L/opt/intel/compilers_and_libraries_2018.2.199/linux/mkl/lib/intel64 -lmkl_cdft_core -lmkl_intel_ilp64 -lmkl_core -lmkl_intel_thread -lmkl_blacs_intelmpi_ilp64 -lpthread -c benchgates.cpp -o benchgates.o
+CC -mkl -no-ipo -g -O3 -DUSE_MM_MALLOC -DSTANDALONE -DINTELQS_HAS_MPI -DMKL_ILP64 -Wall -std=c++11 -qopenmp   -I./ -I../ -L/opt/intel/compilers_and_libraries_2018.2.199/linux/mkl/lib/intel64 -lmkl_cdft_core -lmkl_intel_ilp64 -lmkl_core -lmkl_intel_thread -lmkl_blacs_intelmpi_ilp64 -lpthread -c testgates.cpp -o testgates.o
+CC -mkl -no-ipo -g -O3 -DUSE_MM_MALLOC -DSTANDALONE -DINTELQS_HAS_MPI -DMKL_ILP64 -Wall -std=c++11 -qopenmp   -I./ -I../ -L/opt/intel/compilers_and_libraries_2018.2.199/linux/mkl/lib/intel64 -lmkl_cdft_core -lmkl_intel_ilp64 -lmkl_core -lmkl_intel_thread -lmkl_blacs_intelmpi_ilp64 -lpthread -c qft_test.cpp -o qft_test.o
+CC -mkl -no-ipo -g -O3 -DUSE_MM_MALLOC -DSTANDALONE -DINTELQS_HAS_MPI -DMKL_ILP64 -Wall -std=c++11 -qopenmp   -I./ -I../ -L/opt/intel/compilers_and_libraries_2018.2.199/linux/mkl/lib/intel64 -lmkl_cdft_core -lmkl_intel_ilp64 -lmkl_core -lmkl_intel_thread -lmkl_blacs_intelmpi_ilp64 -lpthread -c expect_value_test.cpp -o expect_value_test.o
+CC -mkl -no-ipo -g -O3 -DUSE_MM_MALLOC -DSTANDALONE -DINTELQS_HAS_MPI -DMKL_ILP64 -Wall -std=c++11 -qopenmp   -I./ -I../ -L/opt/intel/compilers_and_libraries_2018.2.199/linux/mkl/lib/intel64 -lmkl_cdft_core -lmkl_intel_ilp64 -lmkl_core -lmkl_intel_thread -lmkl_blacs_intelmpi_ilp64 -lpthread -c getting_started_example.cpp -o getting_started_example.o
+CC -mkl -no-ipo -g -O3 -DUSE_MM_MALLOC -DSTANDALONE -DINTELQS_HAS_MPI -DMKL_ILP64 -Wall -std=c++11 -qopenmp   -I./ -I../ -L/opt/intel/compilers_and_libraries_2018.2.199/linux/mkl/lib/intel64 -lmkl_cdft_core -lmkl_intel_ilp64 -lmkl_core -lmkl_intel_thread -lmkl_blacs_intelmpi_ilp64 -lpthread -c single_qubit_gates_test.cpp -o single_qubit_gates_test.o
+CC -mkl -no-ipo -g -O3 -DUSE_MM_MALLOC -DSTANDALONE -DINTELQS_HAS_MPI -DMKL_ILP64 -Wall -std=c++11 -qopenmp   -I./ -I../ -L/opt/intel/compilers_and_libraries_2018.2.199/linux/mkl/lib/intel64 -lmkl_cdft_core -lmkl_intel_ilp64 -lmkl_core -lmkl_intel_thread -lmkl_blacs_intelmpi_ilp64 -lpthread -c noisy_circuit_test.cpp -o noisy_circuit_test.o
+CC -mkl -no-ipo -o getting_started_example.exe -g -O3 -DUSE_MM_MALLOC -DSTANDALONE -DINTELQS_HAS_MPI -DMKL_ILP64 -Wall -std=c++11 -qopenmp   getting_started_example.o ../qureg/qHiPSTER.a -L/opt/intel/compilers_and_libraries_2018.2.199/linux/mkl/lib/intel64 -lmkl_cdft_core -lmkl_intel_ilp64 -lmkl_core -lmkl_intel_thread -lmkl_blacs_intelmpi_ilp64 -lpthread
+CC -mkl -no-ipo -o single_qubit_gates_test.exe -g -O3 -DUSE_MM_MALLOC -DSTANDALONE -DINTELQS_HAS_MPI -DMKL_ILP64 -Wall -std=c++11 -qopenmp   single_qubit_gates_test.o ../qureg/qHiPSTER.a -L/opt/intel/compilers_and_libraries_2018.2.199/linux/mkl/lib/intel64 -lmkl_cdft_core -lmkl_intel_ilp64 -lmkl_core -lmkl_intel_thread -lmkl_blacs_intelmpi_ilp64 -lpthread
+CC -mkl -no-ipo -o qft_test.exe -g -O3 -DUSE_MM_MALLOC -DSTANDALONE -DINTELQS_HAS_MPI -DMKL_ILP64 -Wall -std=c++11 -qopenmp   qft_test.o ../qureg/qHiPSTER.a -L/opt/intel/compilers_and_libraries_2018.2.199/linux/mkl/lib/intel64 -lmkl_cdft_core -lmkl_intel_ilp64 -lmkl_core -lmkl_intel_thread -lmkl_blacs_intelmpi_ilp64 -lpthread
+CC -mkl -no-ipo -o testgates.exe -g -O3 -DUSE_MM_MALLOC -DSTANDALONE -DINTELQS_HAS_MPI -DMKL_ILP64 -Wall -std=c++11 -qopenmp   testgates.o ../qureg/qHiPSTER.a -L/opt/intel/compilers_and_libraries_2018.2.199/linux/mkl/lib/intel64 -lmkl_cdft_core -lmkl_intel_ilp64 -lmkl_core -lmkl_intel_thread -lmkl_blacs_intelmpi_ilp64 -lpthread
+CC -mkl -no-ipo -o expect_value_test.exe -g -O3 -DUSE_MM_MALLOC -DSTANDALONE -DINTELQS_HAS_MPI -DMKL_ILP64 -Wall -std=c++11 -qopenmp   expect_value_test.o ../qureg/qHiPSTER.a -L/opt/intel/compilers_and_libraries_2018.2.199/linux/mkl/lib/intel64 -lmkl_cdft_core -lmkl_intel_ilp64 -lmkl_core -lmkl_intel_thread -lmkl_blacs_intelmpi_ilp64 -lpthread
+CC -mkl -no-ipo -o benchgates.exe -g -O3 -DUSE_MM_MALLOC -DSTANDALONE -DINTELQS_HAS_MPI -DMKL_ILP64 -Wall -std=c++11 -qopenmp   benchgates.o ../qureg/qHiPSTER.a -L/opt/intel/compilers_and_libraries_2018.2.199/linux/mkl/lib/intel64 -lmkl_cdft_core -lmkl_intel_ilp64 -lmkl_core -lmkl_intel_thread -lmkl_blacs_intelmpi_ilp64 -lpthread
+CC -mkl -no-ipo -o noisy_circuit_test.exe -g -O3 -DUSE_MM_MALLOC -DSTANDALONE -DINTELQS_HAS_MPI -DMKL_ILP64 -Wall -std=c++11 -qopenmp   noisy_circuit_test.o ../qureg/qHiPSTER.a -L/opt/intel/compilers_and_libraries_2018.2.199/linux/mkl/lib/intel64 -lmkl_cdft_core -lmkl_intel_ilp64 -lmkl_core -lmkl_intel_thread -lmkl_blacs_intelmpi_ilp64 -lpthread
+make[1]: Leaving directory '/scratch/snx3000/mazzolag/qsim/Intel-QS/tests'
+cd examples_giulia; make
+make[1]: Entering directory '/scratch/snx3000/mazzolag/qsim/Intel-QS/examples_giulia'
+CC -mkl -no-ipo -g -O3 -DUSE_MM_MALLOC -DSTANDALONE -DINTELQS_HAS_MPI -DMKL_ILP64 -Wall -std=c++11 -qopenmp   -I./ -I../ -L/opt/intel/compilers_and_libraries_2018.2.199/linux/mkl/lib/intel64 -lmkl_cdft_core -lmkl_intel_ilp64 -lmkl_core -lmkl_intel_thread -lmkl_blacs_intelmpi_ilp64 -lpthread -c dj.cpp -o dj.o
+CC -mkl -no-ipo -g -O3 -DUSE_MM_MALLOC -DSTANDALONE -DINTELQS_HAS_MPI -DMKL_ILP64 -Wall -std=c++11 -qopenmp   -I./ -I../ -L/opt/intel/compilers_and_libraries_2018.2.199/linux/mkl/lib/intel64 -lmkl_cdft_core -lmkl_intel_ilp64 -lmkl_core -lmkl_intel_thread -lmkl_blacs_intelmpi_ilp64 -lpthread -c rqc.cpp -o rqc.o
+dj.cpp(4): warning #3648: #pragma once in the primary source file
+  #pragma once
+          ^
+
+rqc.cpp(5): warning #3648: #pragma once in the primary source file
+  #pragma once
+          ^
+
+CC -mkl -no-ipo -o dj.exe -g -O3 -DUSE_MM_MALLOC -DSTANDALONE -DINTELQS_HAS_MPI -DMKL_ILP64 -Wall -std=c++11 -qopenmp   dj.o ../qureg/qHiPSTER.a -L/opt/intel/compilers_and_libraries_2018.2.199/linux/mkl/lib/intel64 -lmkl_cdft_core -lmkl_intel_ilp64 -lmkl_core -lmkl_intel_thread -lmkl_blacs_intelmpi_ilp64 -lpthread
+CC -mkl -no-ipo -o rqc.exe -g -O3 -DUSE_MM_MALLOC -DSTANDALONE -DINTELQS_HAS_MPI -DMKL_ILP64 -Wall -std=c++11 -qopenmp   rqc.o ../qureg/qHiPSTER.a -L/opt/intel/compilers_and_libraries_2018.2.199/linux/mkl/lib/intel64 -lmkl_cdft_core -lmkl_intel_ilp64 -lmkl_core -lmkl_intel_thread -lmkl_blacs_intelmpi_ilp64 -lpthread
+make[1]: Leaving directory '/scratch/snx3000/mazzolag/qsim/Intel-QS/examples_giulia'
+cd interface; make
+make[1]: Entering directory '/scratch/snx3000/mazzolag/qsim/Intel-QS/interface'
+CC -mkl -no-ipo -g -O3 -DUSE_MM_MALLOC -DSTANDALONE -DINTELQS_HAS_MPI -DMKL_ILP64 -Wall -std=c++11 -qopenmp   -I./ -I../ -c qhipster_interface_main.cpp -o qhipster_interface_main.o
+CC -mkl -no-ipo -g -O3 -DUSE_MM_MALLOC -DSTANDALONE -DINTELQS_HAS_MPI -DMKL_ILP64 -Wall -std=c++11 -qopenmp   -I./ -I../ -c interface_api_memory.cpp -o interface_api_memory.o
+CC -mkl -no-ipo -g -O3 -DUSE_MM_MALLOC -DSTANDALONE -DINTELQS_HAS_MPI -DMKL_ILP64 -Wall -std=c++11 -qopenmp   -I./ -I../ -c interface_api_qubitid.cpp -o interface_api_qubitid.o
+CC -mkl -no-ipo -g -O3 -DUSE_MM_MALLOC -DSTANDALONE -DINTELQS_HAS_MPI -DMKL_ILP64 -Wall -std=c++11 -qopenmp   -I./ -I../ -c interface_api_qasm.cpp -o interface_api_qasm.o
+CC -mkl -no-ipo -g -O3 -DUSE_MM_MALLOC -DSTANDALONE -DINTELQS_HAS_MPI -DMKL_ILP64 -Wall -std=c++11 -qopenmp   -I./ -I../ -c interface_api_version.cpp -o interface_api_version.o
+CC -mkl -no-ipo -g -O3 -DUSE_MM_MALLOC -DSTANDALONE -DINTELQS_HAS_MPI -DMKL_ILP64 -Wall -std=c++11 -qopenmp   qhipster_interface_main.o interface_api_memory.o interface_api_qubitid.o interface_api_qasm.o interface_api_version.o ../qureg/qHiPSTER.a -L/opt/intel/compilers_and_libraries_2018.2.199/linux/mkl/lib/intel64 -lmkl_cdft_core -lmkl_intel_ilp64 -lmkl_core -lmkl_intel_thread -lmkl_blacs_intelmpi_ilp64 -lpthread -o qasm_interface.exe
+make[1]: Leaving directory '/scratch/snx3000/mazzolag/qsim/Intel-QS/interface'
+================================
+       RUNNING BENCHMARKS
+================================
+CONFIGURATION: N = 36, nodes = 256
+[  0] glbrank:      0 mynodeid:      0 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  1] glbrank:      1 mynodeid:      0 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  2] glbrank:      2 mynodeid:      1 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  3] glbrank:      3 mynodeid:      1 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  4] glbrank:      4 mynodeid:      2 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  5] glbrank:      5 mynodeid:      2 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  6] glbrank:      6 mynodeid:      3 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  7] glbrank:      7 mynodeid:      3 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  8] glbrank:      8 mynodeid:      4 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  9] glbrank:      9 mynodeid:      4 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 10] glbrank:     10 mynodeid:      5 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 11] glbrank:     11 mynodeid:      5 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 12] glbrank:     12 mynodeid:      6 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 13] glbrank:     13 mynodeid:      6 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 14] glbrank:     14 mynodeid:      7 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 15] glbrank:     15 mynodeid:      7 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 16] glbrank:     16 mynodeid:      8 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 17] glbrank:     17 mynodeid:      8 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 18] glbrank:     18 mynodeid:      9 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 19] glbrank:     19 mynodeid:      9 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 20] glbrank:     20 mynodeid:     10 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 21] glbrank:     21 mynodeid:     10 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 22] glbrank:     22 mynodeid:     11 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 23] glbrank:     23 mynodeid:     11 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 24] glbrank:     24 mynodeid:     12 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 25] glbrank:     25 mynodeid:     12 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 26] glbrank:     26 mynodeid:     13 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 27] glbrank:     27 mynodeid:     13 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 28] glbrank:     28 mynodeid:     14 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 29] glbrank:     29 mynodeid:     14 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 30] glbrank:     30 mynodeid:     15 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 31] glbrank:     31 mynodeid:     15 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 32] glbrank:     32 mynodeid:     16 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 33] glbrank:     33 mynodeid:     16 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 34] glbrank:     34 mynodeid:     17 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 35] glbrank:     35 mynodeid:     17 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 36] glbrank:     36 mynodeid:     18 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 37] glbrank:     37 mynodeid:     18 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 38] glbrank:     38 mynodeid:     19 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 39] glbrank:     39 mynodeid:     19 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 40] glbrank:     40 mynodeid:     20 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 41] glbrank:     41 mynodeid:     20 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 42] glbrank:     42 mynodeid:     21 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 43] glbrank:     43 mynodeid:     21 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 44] glbrank:     44 mynodeid:     22 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 45] glbrank:     45 mynodeid:     22 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 46] glbrank:     46 mynodeid:     23 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 47] glbrank:     47 mynodeid:     23 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 48] glbrank:     48 mynodeid:     24 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 49] glbrank:     49 mynodeid:     24 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 50] glbrank:     50 mynodeid:     25 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 51] glbrank:     51 mynodeid:     25 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 52] glbrank:     52 mynodeid:     26 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 53] glbrank:     53 mynodeid:     26 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 54] glbrank:     54 mynodeid:     27 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 55] glbrank:     55 mynodeid:     27 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 56] glbrank:     56 mynodeid:     28 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 57] glbrank:     57 mynodeid:     28 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 58] glbrank:     58 mynodeid:     29 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 59] glbrank:     59 mynodeid:     29 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 60] glbrank:     60 mynodeid:     30 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 61] glbrank:     61 mynodeid:     30 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 62] glbrank:     62 mynodeid:     31 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 63] glbrank:     63 mynodeid:     31 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 64] glbrank:     64 mynodeid:     32 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 65] glbrank:     65 mynodeid:     32 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 66] glbrank:     66 mynodeid:     33 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 67] glbrank:     67 mynodeid:     33 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 68] glbrank:     68 mynodeid:     34 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 69] glbrank:     69 mynodeid:     34 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 70] glbrank:     70 mynodeid:     35 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 71] glbrank:     71 mynodeid:     35 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 72] glbrank:     72 mynodeid:     36 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 73] glbrank:     73 mynodeid:     36 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 74] glbrank:     74 mynodeid:     37 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 75] glbrank:     75 mynodeid:     37 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 76] glbrank:     76 mynodeid:     38 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 77] glbrank:     77 mynodeid:     38 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 78] glbrank:     78 mynodeid:     39 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 79] glbrank:     79 mynodeid:     39 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 80] glbrank:     80 mynodeid:     40 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 81] glbrank:     81 mynodeid:     40 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 82] glbrank:     82 mynodeid:     41 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 83] glbrank:     83 mynodeid:     41 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 84] glbrank:     84 mynodeid:     42 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 85] glbrank:     85 mynodeid:     42 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 86] glbrank:     86 mynodeid:     43 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 87] glbrank:     87 mynodeid:     43 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 88] glbrank:     88 mynodeid:     44 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 89] glbrank:     89 mynodeid:     44 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 90] glbrank:     90 mynodeid:     45 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 91] glbrank:     91 mynodeid:     45 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 92] glbrank:     92 mynodeid:     46 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 93] glbrank:     93 mynodeid:     46 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 94] glbrank:     94 mynodeid:     47 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 95] glbrank:     95 mynodeid:     47 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 96] glbrank:     96 mynodeid:     48 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 97] glbrank:     97 mynodeid:     48 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 98] glbrank:     98 mynodeid:     49 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 99] glbrank:     99 mynodeid:     49 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[100] glbrank:    100 mynodeid:     50 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[101] glbrank:    101 mynodeid:     50 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[102] glbrank:    102 mynodeid:     51 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[103] glbrank:    103 mynodeid:     51 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[104] glbrank:    104 mynodeid:     52 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[105] glbrank:    105 mynodeid:     52 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[106] glbrank:    106 mynodeid:     53 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[107] glbrank:    107 mynodeid:     53 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[108] glbrank:    108 mynodeid:     54 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[109] glbrank:    109 mynodeid:     54 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[110] glbrank:    110 mynodeid:     55 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[111] glbrank:    111 mynodeid:     55 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[112] glbrank:    112 mynodeid:     56 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[113] glbrank:    113 mynodeid:     56 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[114] glbrank:    114 mynodeid:     57 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[115] glbrank:    115 mynodeid:     57 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[116] glbrank:    116 mynodeid:     58 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[117] glbrank:    117 mynodeid:     58 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[118] glbrank:    118 mynodeid:     59 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[119] glbrank:    119 mynodeid:     59 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[120] glbrank:    120 mynodeid:     60 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[121] glbrank:    121 mynodeid:     60 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[122] glbrank:    122 mynodeid:     61 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[123] glbrank:    123 mynodeid:     61 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[124] glbrank:    124 mynodeid:     62 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[125] glbrank:    125 mynodeid:     62 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[126] glbrank:    126 mynodeid:     63 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[127] glbrank:    127 mynodeid:     63 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[128] glbrank:    128 mynodeid:     64 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[129] glbrank:    129 mynodeid:     64 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[130] glbrank:    130 mynodeid:     65 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[131] glbrank:    131 mynodeid:     65 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[132] glbrank:    132 mynodeid:     66 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[133] glbrank:    133 mynodeid:     66 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[134] glbrank:    134 mynodeid:     67 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[135] glbrank:    135 mynodeid:     67 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[136] glbrank:    136 mynodeid:     68 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[137] glbrank:    137 mynodeid:     68 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[138] glbrank:    138 mynodeid:     69 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[139] glbrank:    139 mynodeid:     69 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[140] glbrank:    140 mynodeid:     70 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[141] glbrank:    141 mynodeid:     70 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[142] glbrank:    142 mynodeid:     71 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[143] glbrank:    143 mynodeid:     71 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[144] glbrank:    144 mynodeid:     72 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[145] glbrank:    145 mynodeid:     72 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[146] glbrank:    146 mynodeid:     73 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[147] glbrank:    147 mynodeid:     73 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[148] glbrank:    148 mynodeid:     74 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[149] glbrank:    149 mynodeid:     74 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[150] glbrank:    150 mynodeid:     75 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[151] glbrank:    151 mynodeid:     75 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[152] glbrank:    152 mynodeid:     76 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[153] glbrank:    153 mynodeid:     76 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[154] glbrank:    154 mynodeid:     77 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[155] glbrank:    155 mynodeid:     77 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[156] glbrank:    156 mynodeid:     78 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[157] glbrank:    157 mynodeid:     78 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[158] glbrank:    158 mynodeid:     79 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[159] glbrank:    159 mynodeid:     79 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[160] glbrank:    160 mynodeid:     80 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[161] glbrank:    161 mynodeid:     80 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[162] glbrank:    162 mynodeid:     81 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[163] glbrank:    163 mynodeid:     81 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[164] glbrank:    164 mynodeid:     82 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[165] glbrank:    165 mynodeid:     82 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[166] glbrank:    166 mynodeid:     83 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[167] glbrank:    167 mynodeid:     83 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[168] glbrank:    168 mynodeid:     84 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[169] glbrank:    169 mynodeid:     84 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[170] glbrank:    170 mynodeid:     85 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[171] glbrank:    171 mynodeid:     85 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[172] glbrank:    172 mynodeid:     86 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[173] glbrank:    173 mynodeid:     86 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[174] glbrank:    174 mynodeid:     87 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[175] glbrank:    175 mynodeid:     87 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[176] glbrank:    176 mynodeid:     88 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[177] glbrank:    177 mynodeid:     88 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[178] glbrank:    178 mynodeid:     89 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[179] glbrank:    179 mynodeid:     89 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[180] glbrank:    180 mynodeid:     90 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[181] glbrank:    181 mynodeid:     90 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[182] glbrank:    182 mynodeid:     91 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[183] glbrank:    183 mynodeid:     91 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[184] glbrank:    184 mynodeid:     92 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[185] glbrank:    185 mynodeid:     92 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[186] glbrank:    186 mynodeid:     93 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[187] glbrank:    187 mynodeid:     93 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[188] glbrank:    188 mynodeid:     94 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[189] glbrank:    189 mynodeid:     94 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[190] glbrank:    190 mynodeid:     95 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[191] glbrank:    191 mynodeid:     95 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[192] glbrank:    192 mynodeid:     96 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[193] glbrank:    193 mynodeid:     96 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[194] glbrank:    194 mynodeid:     97 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[195] glbrank:    195 mynodeid:     97 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[196] glbrank:    196 mynodeid:     98 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[197] glbrank:    197 mynodeid:     98 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[198] glbrank:    198 mynodeid:     99 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[199] glbrank:    199 mynodeid:     99 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[200] glbrank:    200 mynodeid:    100 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[201] glbrank:    201 mynodeid:    100 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[202] glbrank:    202 mynodeid:    101 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[203] glbrank:    203 mynodeid:    101 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[204] glbrank:    204 mynodeid:    102 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[205] glbrank:    205 mynodeid:    102 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[206] glbrank:    206 mynodeid:    103 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[207] glbrank:    207 mynodeid:    103 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[208] glbrank:    208 mynodeid:    104 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[209] glbrank:    209 mynodeid:    104 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[210] glbrank:    210 mynodeid:    105 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[211] glbrank:    211 mynodeid:    105 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[212] glbrank:    212 mynodeid:    106 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[213] glbrank:    213 mynodeid:    106 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[214] glbrank:    214 mynodeid:    107 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[215] glbrank:    215 mynodeid:    107 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[216] glbrank:    216 mynodeid:    108 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[217] glbrank:    217 mynodeid:    108 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[218] glbrank:    218 mynodeid:    109 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[219] glbrank:    219 mynodeid:    109 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[220] glbrank:    220 mynodeid:    110 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[221] glbrank:    221 mynodeid:    110 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[222] glbrank:    222 mynodeid:    111 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[223] glbrank:    223 mynodeid:    111 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[224] glbrank:    224 mynodeid:    112 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[225] glbrank:    225 mynodeid:    112 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[226] glbrank:    226 mynodeid:    113 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[227] glbrank:    227 mynodeid:    113 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[228] glbrank:    228 mynodeid:    114 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[229] glbrank:    229 mynodeid:    114 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[230] glbrank:    230 mynodeid:    115 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[231] glbrank:    231 mynodeid:    115 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[232] glbrank:    232 mynodeid:    116 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[233] glbrank:    233 mynodeid:    116 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[234] glbrank:    234 mynodeid:    117 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[235] glbrank:    235 mynodeid:    117 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[236] glbrank:    236 mynodeid:    118 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[237] glbrank:    237 mynodeid:    118 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[238] glbrank:    238 mynodeid:    119 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[239] glbrank:    239 mynodeid:    119 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[240] glbrank:    240 mynodeid:    120 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[241] glbrank:    241 mynodeid:    120 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[242] glbrank:    242 mynodeid:    121 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[243] glbrank:    243 mynodeid:    121 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[244] glbrank:    244 mynodeid:    122 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[245] glbrank:    245 mynodeid:    122 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[246] glbrank:    246 mynodeid:    123 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[247] glbrank:    247 mynodeid:    123 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[248] glbrank:    248 mynodeid:    124 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[249] glbrank:    249 mynodeid:    124 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[250] glbrank:    250 mynodeid:    125 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[251] glbrank:    251 mynodeid:    125 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[252] glbrank:    252 mynodeid:    126 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[253] glbrank:    253 mynodeid:    126 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[254] glbrank:    254 mynodeid:    127 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[255] glbrank:    255 mynodeid:    127 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[256] glbrank:    256 mynodeid:    128 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[257] glbrank:    257 mynodeid:    128 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[258] glbrank:    258 mynodeid:    129 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[259] glbrank:    259 mynodeid:    129 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[260] glbrank:    260 mynodeid:    130 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[261] glbrank:    261 mynodeid:    130 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[262] glbrank:    262 mynodeid:    131 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[263] glbrank:    263 mynodeid:    131 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[264] glbrank:    264 mynodeid:    132 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[265] glbrank:    265 mynodeid:    132 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[266] glbrank:    266 mynodeid:    133 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[267] glbrank:    267 mynodeid:    133 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[268] glbrank:    268 mynodeid:    134 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[269] glbrank:    269 mynodeid:    134 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[270] glbrank:    270 mynodeid:    135 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[271] glbrank:    271 mynodeid:    135 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[272] glbrank:    272 mynodeid:    136 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[273] glbrank:    273 mynodeid:    136 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[274] glbrank:    274 mynodeid:    137 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[275] glbrank:    275 mynodeid:    137 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[276] glbrank:    276 mynodeid:    138 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[277] glbrank:    277 mynodeid:    138 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[278] glbrank:    278 mynodeid:    139 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[279] glbrank:    279 mynodeid:    139 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[280] glbrank:    280 mynodeid:    140 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[281] glbrank:    281 mynodeid:    140 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[282] glbrank:    282 mynodeid:    141 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[283] glbrank:    283 mynodeid:    141 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[284] glbrank:    284 mynodeid:    142 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[285] glbrank:    285 mynodeid:    142 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[286] glbrank:    286 mynodeid:    143 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[287] glbrank:    287 mynodeid:    143 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[288] glbrank:    288 mynodeid:    144 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[289] glbrank:    289 mynodeid:    144 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[290] glbrank:    290 mynodeid:    145 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[291] glbrank:    291 mynodeid:    145 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[292] glbrank:    292 mynodeid:    146 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[293] glbrank:    293 mynodeid:    146 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[294] glbrank:    294 mynodeid:    147 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[295] glbrank:    295 mynodeid:    147 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[296] glbrank:    296 mynodeid:    148 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[297] glbrank:    297 mynodeid:    148 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[298] glbrank:    298 mynodeid:    149 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[299] glbrank:    299 mynodeid:    149 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[300] glbrank:    300 mynodeid:    150 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[301] glbrank:    301 mynodeid:    150 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[302] glbrank:    302 mynodeid:    151 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[303] glbrank:    303 mynodeid:    151 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[304] glbrank:    304 mynodeid:    152 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[305] glbrank:    305 mynodeid:    152 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[306] glbrank:    306 mynodeid:    153 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[307] glbrank:    307 mynodeid:    153 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[308] glbrank:    308 mynodeid:    154 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[309] glbrank:    309 mynodeid:    154 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[310] glbrank:    310 mynodeid:    155 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[311] glbrank:    311 mynodeid:    155 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[312] glbrank:    312 mynodeid:    156 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[313] glbrank:    313 mynodeid:    156 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[314] glbrank:    314 mynodeid:    157 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[315] glbrank:    315 mynodeid:    157 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[316] glbrank:    316 mynodeid:    158 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[317] glbrank:    317 mynodeid:    158 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[318] glbrank:    318 mynodeid:    159 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[319] glbrank:    319 mynodeid:    159 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[320] glbrank:    320 mynodeid:    160 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[321] glbrank:    321 mynodeid:    160 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[322] glbrank:    322 mynodeid:    161 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[323] glbrank:    323 mynodeid:    161 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[324] glbrank:    324 mynodeid:    162 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[325] glbrank:    325 mynodeid:    162 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[326] glbrank:    326 mynodeid:    163 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[327] glbrank:    327 mynodeid:    163 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[328] glbrank:    328 mynodeid:    164 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[329] glbrank:    329 mynodeid:    164 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[330] glbrank:    330 mynodeid:    165 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[331] glbrank:    331 mynodeid:    165 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[332] glbrank:    332 mynodeid:    166 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[333] glbrank:    333 mynodeid:    166 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[334] glbrank:    334 mynodeid:    167 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[335] glbrank:    335 mynodeid:    167 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[336] glbrank:    336 mynodeid:    168 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[337] glbrank:    337 mynodeid:    168 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[338] glbrank:    338 mynodeid:    169 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[339] glbrank:    339 mynodeid:    169 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[340] glbrank:    340 mynodeid:    170 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[341] glbrank:    341 mynodeid:    170 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[342] glbrank:    342 mynodeid:    171 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[343] glbrank:    343 mynodeid:    171 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[344] glbrank:    344 mynodeid:    172 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[345] glbrank:    345 mynodeid:    172 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[346] glbrank:    346 mynodeid:    173 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[347] glbrank:    347 mynodeid:    173 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[348] glbrank:    348 mynodeid:    174 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[349] glbrank:    349 mynodeid:    174 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[350] glbrank:    350 mynodeid:    175 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[351] glbrank:    351 mynodeid:    175 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[352] glbrank:    352 mynodeid:    176 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[353] glbrank:    353 mynodeid:    176 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[354] glbrank:    354 mynodeid:    177 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[355] glbrank:    355 mynodeid:    177 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[356] glbrank:    356 mynodeid:    178 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[357] glbrank:    357 mynodeid:    178 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[358] glbrank:    358 mynodeid:    179 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[359] glbrank:    359 mynodeid:    179 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[360] glbrank:    360 mynodeid:    180 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[361] glbrank:    361 mynodeid:    180 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[362] glbrank:    362 mynodeid:    181 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[363] glbrank:    363 mynodeid:    181 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[364] glbrank:    364 mynodeid:    182 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[365] glbrank:    365 mynodeid:    182 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[366] glbrank:    366 mynodeid:    183 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[367] glbrank:    367 mynodeid:    183 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[368] glbrank:    368 mynodeid:    184 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[369] glbrank:    369 mynodeid:    184 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[370] glbrank:    370 mynodeid:    185 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[371] glbrank:    371 mynodeid:    185 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[372] glbrank:    372 mynodeid:    186 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[373] glbrank:    373 mynodeid:    186 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[374] glbrank:    374 mynodeid:    187 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[375] glbrank:    375 mynodeid:    187 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[376] glbrank:    376 mynodeid:    188 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[377] glbrank:    377 mynodeid:    188 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[378] glbrank:    378 mynodeid:    189 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[379] glbrank:    379 mynodeid:    189 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[380] glbrank:    380 mynodeid:    190 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[381] glbrank:    381 mynodeid:    190 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[382] glbrank:    382 mynodeid:    191 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[383] glbrank:    383 mynodeid:    191 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[384] glbrank:    384 mynodeid:    192 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[385] glbrank:    385 mynodeid:    192 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[386] glbrank:    386 mynodeid:    193 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[387] glbrank:    387 mynodeid:    193 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[388] glbrank:    388 mynodeid:    194 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[389] glbrank:    389 mynodeid:    194 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[390] glbrank:    390 mynodeid:    195 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[391] glbrank:    391 mynodeid:    195 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[392] glbrank:    392 mynodeid:    196 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[393] glbrank:    393 mynodeid:    196 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[394] glbrank:    394 mynodeid:    197 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[395] glbrank:    395 mynodeid:    197 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[396] glbrank:    396 mynodeid:    198 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[397] glbrank:    397 mynodeid:    198 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[398] glbrank:    398 mynodeid:    199 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[399] glbrank:    399 mynodeid:    199 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[400] glbrank:    400 mynodeid:    200 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[401] glbrank:    401 mynodeid:    200 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[402] glbrank:    402 mynodeid:    201 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[403] glbrank:    403 mynodeid:    201 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[404] glbrank:    404 mynodeid:    202 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[405] glbrank:    405 mynodeid:    202 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[406] glbrank:    406 mynodeid:    203 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[407] glbrank:    407 mynodeid:    203 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[408] glbrank:    408 mynodeid:    204 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[409] glbrank:    409 mynodeid:    204 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[410] glbrank:    410 mynodeid:    205 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[411] glbrank:    411 mynodeid:    205 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[412] glbrank:    412 mynodeid:    206 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[413] glbrank:    413 mynodeid:    206 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[414] glbrank:    414 mynodeid:    207 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[415] glbrank:    415 mynodeid:    207 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[416] glbrank:    416 mynodeid:    208 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[417] glbrank:    417 mynodeid:    208 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[418] glbrank:    418 mynodeid:    209 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[419] glbrank:    419 mynodeid:    209 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[420] glbrank:    420 mynodeid:    210 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[421] glbrank:    421 mynodeid:    210 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[422] glbrank:    422 mynodeid:    211 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[423] glbrank:    423 mynodeid:    211 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[424] glbrank:    424 mynodeid:    212 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[425] glbrank:    425 mynodeid:    212 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[426] glbrank:    426 mynodeid:    213 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[427] glbrank:    427 mynodeid:    213 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[428] glbrank:    428 mynodeid:    214 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[429] glbrank:    429 mynodeid:    214 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[430] glbrank:    430 mynodeid:    215 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[431] glbrank:    431 mynodeid:    215 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[432] glbrank:    432 mynodeid:    216 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[433] glbrank:    433 mynodeid:    216 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[434] glbrank:    434 mynodeid:    217 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[435] glbrank:    435 mynodeid:    217 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[436] glbrank:    436 mynodeid:    218 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[437] glbrank:    437 mynodeid:    218 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[438] glbrank:    438 mynodeid:    219 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[439] glbrank:    439 mynodeid:    219 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[440] glbrank:    440 mynodeid:    220 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[441] glbrank:    441 mynodeid:    220 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[442] glbrank:    442 mynodeid:    221 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[443] glbrank:    443 mynodeid:    221 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[444] glbrank:    444 mynodeid:    222 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[445] glbrank:    445 mynodeid:    222 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[446] glbrank:    446 mynodeid:    223 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[447] glbrank:    447 mynodeid:    223 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[448] glbrank:    448 mynodeid:    224 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[449] glbrank:    449 mynodeid:    224 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[450] glbrank:    450 mynodeid:    225 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[451] glbrank:    451 mynodeid:    225 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[452] glbrank:    452 mynodeid:    226 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[453] glbrank:    453 mynodeid:    226 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[454] glbrank:    454 mynodeid:    227 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[455] glbrank:    455 mynodeid:    227 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[456] glbrank:    456 mynodeid:    228 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[457] glbrank:    457 mynodeid:    228 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[458] glbrank:    458 mynodeid:    229 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[459] glbrank:    459 mynodeid:    229 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[460] glbrank:    460 mynodeid:    230 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[461] glbrank:    461 mynodeid:    230 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[462] glbrank:    462 mynodeid:    231 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[463] glbrank:    463 mynodeid:    231 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[464] glbrank:    464 mynodeid:    232 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[465] glbrank:    465 mynodeid:    232 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[466] glbrank:    466 mynodeid:    233 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[467] glbrank:    467 mynodeid:    233 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[468] glbrank:    468 mynodeid:    234 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[469] glbrank:    469 mynodeid:    234 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[470] glbrank:    470 mynodeid:    235 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[471] glbrank:    471 mynodeid:    235 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[472] glbrank:    472 mynodeid:    236 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[473] glbrank:    473 mynodeid:    236 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[474] glbrank:    474 mynodeid:    237 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[475] glbrank:    475 mynodeid:    237 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[476] glbrank:    476 mynodeid:    238 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[477] glbrank:    477 mynodeid:    238 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[478] glbrank:    478 mynodeid:    239 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[479] glbrank:    479 mynodeid:    239 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[480] glbrank:    480 mynodeid:    240 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[481] glbrank:    481 mynodeid:    240 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[482] glbrank:    482 mynodeid:    241 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[483] glbrank:    483 mynodeid:    241 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[484] glbrank:    484 mynodeid:    242 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[485] glbrank:    485 mynodeid:    242 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[486] glbrank:    486 mynodeid:    243 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[487] glbrank:    487 mynodeid:    243 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[488] glbrank:    488 mynodeid:    244 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[489] glbrank:    489 mynodeid:    244 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[490] glbrank:    490 mynodeid:    245 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[491] glbrank:    491 mynodeid:    245 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[492] glbrank:    492 mynodeid:    246 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[493] glbrank:    493 mynodeid:    246 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[494] glbrank:    494 mynodeid:    247 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[495] glbrank:    495 mynodeid:    247 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[496] glbrank:    496 mynodeid:    248 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[497] glbrank:    497 mynodeid:    248 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[498] glbrank:    498 mynodeid:    249 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[499] glbrank:    499 mynodeid:    249 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[500] glbrank:    500 mynodeid:    250 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[501] glbrank:    501 mynodeid:    250 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[502] glbrank:    502 mynodeid:    251 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[503] glbrank:    503 mynodeid:    251 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[504] glbrank:    504 mynodeid:    252 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[505] glbrank:    505 mynodeid:    252 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[506] glbrank:    506 mynodeid:    253 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[507] glbrank:    507 mynodeid:    253 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[508] glbrank:    508 mynodeid:    254 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[509] glbrank:    509 mynodeid:    254 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[510] glbrank:    510 mynodeid:    255 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[511] glbrank:    511 mynodeid:    255 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+Specialization is off
+Total storage per node  = 12288.00 MB 
+      storage per state = 8192.00 MB 
+      temporary storage = 4096.00000 MB 
+Specialization is off
+Total storage per node  = 12288.00 MB 
+      storage per state = 8192.00 MB 
+      temporary storage = 4096.00000 MB 
+Specialization is off
+Total storage per node  = 12288.00 MB 
+      storage per state = 8192.00 MB 
+      temporary storage = 4096.00000 MB 
+Specialization is off
+Total storage per node  = 12288.00 MB 
+      storage per state = 8192.00 MB 
+      temporary storage = 4096.00000 MB 
+Specialization is off
+Total storage per node  = 12288.00 MB 
+      storage per state = 8192.00 MB 
+      temporary storage = 4096.00000 MB 
+Specialization is off
+Total storage per node  = 12288.00 MB 
+      storage per state = 8192.00 MB 
+      temporary storage = 4096.00000 MB 
+Specialization is off
+Total storage per node  = 12288.00 MB 
+      storage per state = 8192.00 MB 
+      temporary storage = 4096.00000 MB 
+Specialization is off
+Total storage per node  = 12288.00 MB 
+      storage per state = 8192.00 MB 
+      temporary storage = 4096.00000 MB 
+Specialization is off
+Total storage per node  = 12288.00 MB 
+      storage per state = 8192.00 MB 
+      temporary storage = 4096.00000 MB 
+Specialization is off
+Total storage per node  = 12288.00 MB 
+      storage per state = 8192.00 MB 
+      temporary storage = 4096.00000 MB 
+Duration [ms] = 76063, 84077, 50210, 49338, 74327, 90577, 75440, 49088, 49765, 83955
+Avg time [ms] = 68284, Std deviation = 15928
+
+================================
+
+ 
+Batch Job Summary Report for Job "weak-dj256.sh" (13306952) on daint
+-----------------------------------------------------------------------------------------------------
+             Submit            Eligible               Start                 End    Elapsed  Timelimit 
+------------------- ------------------- ------------------- ------------------- ---------- ---------- 
+2019-04-25T13:01:43 2019-04-25T13:01:43 2019-04-25T13:36:14 2019-04-25T13:49:05   00:12:51   02:00:00 
+-----------------------------------------------------------------------------------------------------
+Username    Account     Partition   NNodes   Energy
+----------  ----------  ----------  ------  --------------
+mazzolag    csstaff     normal         256          joules
+ 
+This job did not utilize any GPUs
+ 
+----------------------------------------------------------
+Scratch File System        Files       Quota
+--------------------  ----------  ----------
+/scratch/snx3000           26238     1000000
+ 
