@@ -3,10 +3,10 @@
 # this part will be ignored if:
 # - nodes are preallocated with salloc
 # - and the file is executed as just run.sh (not sbatch run.sh)
-#SBATCH --nodes=32
+#SBATCH --nodes=512
 #SBATCH --constraint=mc
 #SBATCH --partition=normal
-#SBATCH --time=300
+#SBATCH --time=120
 
 # loading necessary modules
 echo "============================="
@@ -33,14 +33,14 @@ echo "================================"
 echo "       RUNNING BENCHMARKS"
 echo "================================"
 
-number_of_nodes=(1 2 4 8 16 32)
+number_of_nodes=(1 2 4 8 16 32 64 128 256 512)
 ranks_per_node=2
-N=(28 29 30 31 32 33)
+N=(28 29 30 31 32 33 34 35 36 37)
 n_repetitions=10
 export OMP_NUM_THREADS=18
 
 path_to_executable="./examples_giulia/dj.exe"
-path_to_file="./benchmarks/weak-dj-bench.txt"
+path_to_file="./benchmarks/weak-dj-bench-part3.txt"
 
 # iterate over the values of nodes
 for i in "${!number_of_nodes[@]}"
