@@ -25,15 +25,20 @@ ifeq ($(bigmpi),1)
  LDFLAGS := ${BIGMPI_LIB} ${LDFLAGS}
 endif
 
+
 EXECS := dj.exe\
-	 rqc.exe
+	 rqc.exe\
+	 single-qubit-gates.exe
 
 all: ${EXECS}
+
 
 dj.exe: dj.o makefile ../qureg/qHiPSTER.a
 	$(CC) -o dj.exe ${CFLAGS} dj.o ../qureg/qHiPSTER.a ${LDFLAGS}
 rqc.exe: rqc.o makefile ../qureg/qHiPSTER.a
 	$(CC) -o rqc.exe ${CFLAGS} rqc.o ../qureg/qHiPSTER.a ${LDFLAGS}
+single-qubit-gates.exe: single-qubit-gates.o makefile ../qureg/qHiPSTER.a
+	$(CC) -o single-qubit-gates.exe ${CFLAGS} single-qubit-gates.o ../qureg/qHiPSTER.a ${LDFLAGS}
 
 %.o : %.cpp makefile
 	$(CC) ${CFLAGS} ${INC} ${LDFLAGS} -c $< -o $@
