@@ -806,6 +806,7 @@ Total storage per node  = 6.00 MB
 Duration [ms] = 559, 480, 527, 498
 Avg time [ms] = 516, Std deviation = 29
 --------------------------------
+
 CONFIGURATION: n x m = 5x6, depth = 40, nodes = 256
 [  0] glbrank:      0 mynodeid:      0 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
 [  1] glbrank:      1 mynodeid:      0 nnodes:    256 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
