@@ -3,10 +3,10 @@
 # this part will be ignored if:
 # - nodes are preallocated with salloc
 # - and the file is executed as just run.sh (not sbatch run.sh)
-#SBATCH --nodes=64
+#SBATCH --nodes=256
 #SBATCH --constraint=mc
 #SBATCH --partition=normal
-#SBATCH --time=240
+#SBATCH --time=180
 
 # loading necessary modules
 echo "============================="
@@ -33,7 +33,7 @@ echo "================================"
 echo "       RUNNING BENCHMARKS"
 echo "================================"
 
-number_of_nodes=(64 32 16 8 4 2 1)
+number_of_nodes=(256 128)
 ranks_per_node=2
 
 n_repetitions=4
@@ -44,7 +44,7 @@ export OMP_NUM_THREADS=18
 export PREFIX=scrpt
 
 path_to_executable="./examples_giulia/rqc.exe"
-path_to_file="./benchmarks/rqc-plus.txt"
+path_to_file="./benchmarks/rqc-plus-2.txt"
 
 # iterate over the values of argument N
 for arg in "${N[@]}"
