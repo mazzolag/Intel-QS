@@ -15,19 +15,19 @@
 ##------------------------------------------------------------------------------
 include ./make.inc
 
-LDFLAGS = -L${MKLROOT}/lib/intel64 -lmkl_cdft_core -lmkl_intel_ilp64 -lmkl_core -lmkl_intel_thread -lmkl_blacs_intelmpi_ilp64 -lpthread
+LDFLAGS = -L${MKLROOT}/lib/intel64 -lmkl_cdft_core -lmkl_intel_ilp64 -lmkl_core -lmkl_intel_thread -lmkl_blacs_intelmpi_ilp64 -lpthread 
 
 ##-----------------------------------------------------------------------------
 ## Add the source files you wish to target by uncommenting & modifying the SRC=
 #SRC=
 ##-----------------------------------------------------------------------------
 
-LIBS := ./lib/intel64/qHiPSTER.a
+LIBS := ./lib/intel64/qHiPSTER.a 
 TARGET_EXEC := $(addsuffix .exe, $(basename $(SRC)))
 TARGET_OBJ  := $(addsuffix .o, $(basename $(SRC)))
 
 ${TARGET_EXEC} : ${SRC} makefile ${TARGET_OBJ} ${LIBS}
-	${CC} -o ${TARGET_EXEC} ${CFLAGS} ${TARGET_OBJ} ${LDFLAGS} ${LIBS} 
+	${CC} -o ${TARGET_EXEC} ${CFLAGS} ${TARGET_OBJ} ${LDFLAGS} ${LIBS} ${MPIPFLAGS} 
 
 ${TARGET_OBJ} : ${SRC} makefile
 	${CC} ${CFLAGS} ${INC} -c ${SRC} -o ${TARGET_OBJ}

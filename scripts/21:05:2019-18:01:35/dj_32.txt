@@ -1,0 +1,33 @@
+CONFIGURATION: N = 16, nodes = 32
+
+--------------------------------
+CONFIGURATION: N = 19, nodes = 32
+
+--------------------------------
+CONFIGURATION: N = 22, nodes = 32
+
+--------------------------------
+CONFIGURATION: N = 24, nodes = 32
+
+--------------------------------
+CONFIGURATION: N = 26, nodes = 32
+
+--------------------------------
+CONFIGURATION: N = 27, nodes = 32
+
+--------------------------------
+CONFIGURATION: N = 28, nodes = 32
+
+--------------------------------
+CONFIGURATION: N = 29, nodes = 32
+
+--------------------------------
+CONFIGURATION: N = 30, nodes = 32
+
+--------------------------------
+CONFIGURATION: N = 31, nodes = 32
+
+--------------------------------
+CONFIGURATION: N = 33, nodes = 32
+
+--------------------------------

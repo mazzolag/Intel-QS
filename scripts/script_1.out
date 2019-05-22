@@ -1,0 +1,198 @@
+================================
+       RUNNING BENCHMARKS
+================================
+CONFIGURATION: N = 16, nodes = 1
+/scratch/snx3000/mazzolag/qsim/Intel-QS/./examples_giulia/dj.exe: error while loading shared libraries: libmkl_intel_lp64.so: cannot open shared object file: No such file or directory
+/scratch/snx3000/mazzolag/qsim/Intel-QS/./examples_giulia/dj.exe: error while loading shared libraries: libmkl_intel_lp64.so: cannot open shared object file: No such file or directory
+srun: error: nid00426: tasks 0-1: Exited with exit code 127
+srun: Terminating job step 14162969.0
+
+CONFIGURATION: N = 19, nodes = 1
+/scratch/snx3000/mazzolag/qsim/Intel-QS/./examples_giulia/dj.exe: error while loading shared libraries: libmkl_intel_lp64.so: cannot open shared object file: No such file or directory
+/scratch/snx3000/mazzolag/qsim/Intel-QS/./examples_giulia/dj.exe: error while loading shared libraries: libmkl_intel_lp64.so: cannot open shared object file: No such file or directory
+srun: error: nid00426: tasks 0-1: Exited with exit code 127
+srun: Terminating job step 14162969.1
+
+CONFIGURATION: N = 22, nodes = 1
+/scratch/snx3000/mazzolag/qsim/Intel-QS/./examples_giulia/dj.exe: error while loading shared libraries: libmkl_intel_lp64.so: cannot open shared object file: No such file or directory
+/scratch/snx3000/mazzolag/qsim/Intel-QS/./examples_giulia/dj.exe: error while loading shared libraries: libmkl_intel_lp64.so: cannot open shared object file: No such file or directory
+srun: error: nid00426: tasks 0-1: Exited with exit code 127
+srun: Terminating job step 14162969.2
+
+CONFIGURATION: N = 24, nodes = 1
+/scratch/snx3000/mazzolag/qsim/Intel-QS/./examples_giulia/dj.exe: error while loading shared libraries: libmkl_intel_lp64.so: cannot open shared object file: No such file or directory
+/scratch/snx3000/mazzolag/qsim/Intel-QS/./examples_giulia/dj.exe: error while loading shared libraries: libmkl_intel_lp64.so: cannot open shared object file: No such file or directory
+srun: error: nid00426: tasks 0-1: Exited with exit code 127
+srun: Terminating job step 14162969.3
+
+CONFIGURATION: N = 26, nodes = 1
+/scratch/snx3000/mazzolag/qsim/Intel-QS/./examples_giulia/dj.exe: error while loading shared libraries: libmkl_intel_lp64.so: cannot open shared object file: No such file or directory
+/scratch/snx3000/mazzolag/qsim/Intel-QS/./examples_giulia/dj.exe: error while loading shared libraries: libmkl_intel_lp64.so: cannot open shared object file: No such file or directory
+srun: error: nid00426: tasks 0-1: Exited with exit code 127
+srun: Terminating job step 14162969.4
+
+CONFIGURATION: N = 27, nodes = 1
+/scratch/snx3000/mazzolag/qsim/Intel-QS/./examples_giulia/dj.exe: error while loading shared libraries: libmkl_intel_lp64.so: cannot open shared object file: No such file or directory
+/scratch/snx3000/mazzolag/qsim/Intel-QS/./examples_giulia/dj.exe: error while loading shared libraries: libmkl_intel_lp64.so: cannot open shared object file: No such file or directory
+srun: error: nid00426: tasks 0-1: Exited with exit code 127
+srun: Terminating job step 14162969.5
+
+CONFIGURATION: N = 28, nodes = 1
+/scratch/snx3000/mazzolag/qsim/Intel-QS/./examples_giulia/dj.exe: error while loading shared libraries: libmkl_intel_lp64.so: cannot open shared object file: No such file or directory
+/scratch/snx3000/mazzolag/qsim/Intel-QS/./examples_giulia/dj.exe: error while loading shared libraries: libmkl_intel_lp64.so: cannot open shared object file: No such file or directory
+srun: error: nid00426: tasks 0-1: Exited with exit code 127
+srun: Terminating job step 14162969.6
+
+CONFIGURATION: N = 29, nodes = 1
+/scratch/snx3000/mazzolag/qsim/Intel-QS/./examples_giulia/dj.exe: error while loading shared libraries: libmkl_intel_lp64.so: cannot open shared object file: No such file or directory
+/scratch/snx3000/mazzolag/qsim/Intel-QS/./examples_giulia/dj.exe: error while loading shared libraries: libmkl_intel_lp64.so: cannot open shared object file: No such file or directory
+srun: error: nid00426: tasks 0-1: Exited with exit code 127
+srun: Terminating job step 14162969.7
+
+CONFIGURATION: N = 30, nodes = 1
+/scratch/snx3000/mazzolag/qsim/Intel-QS/./examples_giulia/dj.exe: error while loading shared libraries: libmkl_intel_lp64.so: cannot open shared object file: No such file or directory
+/scratch/snx3000/mazzolag/qsim/Intel-QS/./examples_giulia/dj.exe: error while loading shared libraries: libmkl_intel_lp64.so: cannot open shared object file: No such file or directory
+srun: error: nid00426: tasks 0-1: Exited with exit code 127
+srun: Terminating job step 14162969.8
+srun: error: nid00426: tasks 0-1: Exited with exit code 127
+srun: error: Task 0 reported exit for a second time.
+srun: error: Task 1 reported exit for a second time.
+
+CONFIGURATION: N = 31, nodes = 1
+/scratch/snx3000/mazzolag/qsim/Intel-QS/./examples_giulia/dj.exe: error while loading shared libraries: libmkl_intel_lp64.so: cannot open shared object file: No such file or directory
+/scratch/snx3000/mazzolag/qsim/Intel-QS/./examples_giulia/dj.exe: error while loading shared libraries: libmkl_intel_lp64.so: cannot open shared object file: No such file or directory
+srun: error: nid00426: tasks 0-1: Exited with exit code 127
+srun: Terminating job step 14162969.9
+
+CONFIGURATION: N = 33, nodes = 1
+/scratch/snx3000/mazzolag/qsim/Intel-QS/./examples_giulia/dj.exe: error while loading shared libraries: libmkl_intel_lp64.so: cannot open shared object file: No such file or directory
+/scratch/snx3000/mazzolag/qsim/Intel-QS/./examples_giulia/dj.exe: error while loading shared libraries: libmkl_intel_lp64.so: cannot open shared object file: No such file or directory
+srun: error: nid00426: tasks 0-1: Exited with exit code 127
+srun: Terminating job step 14162969.10
+
+CONFIGURATION: n x m = 4x4, depth = 20, nodes = 1
+slurmstepd: error: execve(): /scratch/snx3000/mazzolag/qsim/Intel-QS/./randomQC/rqc.exe: No such file or directory
+slurmstepd: error: execve(): /scratch/snx3000/mazzolag/qsim/Intel-QS/./randomQC/rqc.exe: No such file or directory
+srun: error: nid00426: tasks 0-1: Exited with exit code 2
+srun: Terminating job step 14162969.11
+
+CONFIGURATION: n x m = 4x5, depth = 20, nodes = 1
+slurmstepd: error: execve(): /scratch/snx3000/mazzolag/qsim/Intel-QS/./randomQC/rqc.exe: No such file or directory
+slurmstepd: error: execve(): /scratch/snx3000/mazzolag/qsim/Intel-QS/./randomQC/rqc.exe: No such file or directory
+srun: error: nid00426: tasks 0-1: Exited with exit code 2
+srun: Terminating job step 14162969.12
+
+CONFIGURATION: n x m = 4x4, depth = 40, nodes = 1
+slurmstepd: error: execve(): /scratch/snx3000/mazzolag/qsim/Intel-QS/./randomQC/rqc.exe: No such file or directory
+slurmstepd: error: execve(): /scratch/snx3000/mazzolag/qsim/Intel-QS/./randomQC/rqc.exe: No such file or directory
+srun: error: nid00426: tasks 0-1: Exited with exit code 2
+srun: Terminating job step 14162969.13
+
+CONFIGURATION: n x m = 4x5, depth = 40, nodes = 1
+slurmstepd: error: execve(): /scratch/snx3000/mazzolag/qsim/Intel-QS/./randomQC/rqc.exe: No such file or directory
+slurmstepd: error: execve(): /scratch/snx3000/mazzolag/qsim/Intel-QS/./randomQC/rqc.exe: No such file or directory
+srun: error: nid00426: tasks 0-1: Exited with exit code 2
+srun: Terminating job step 14162969.14
+
+CONFIGURATION: n x m = 4x4, depth = 60, nodes = 1
+slurmstepd: error: execve(): /scratch/snx3000/mazzolag/qsim/Intel-QS/./randomQC/rqc.exe: No such file or directory
+slurmstepd: error: execve(): /scratch/snx3000/mazzolag/qsim/Intel-QS/./randomQC/rqc.exe: No such file or directory
+srun: error: nid00426: tasks 0-1: Exited with exit code 2
+srun: Terminating job step 14162969.15
+
+CONFIGURATION: n x m = 4x5, depth = 60, nodes = 1
+slurmstepd: error: execve(): /scratch/snx3000/mazzolag/qsim/Intel-QS/./randomQC/rqc.exe: No such file or directory
+slurmstepd: error: execve(): /scratch/snx3000/mazzolag/qsim/Intel-QS/./randomQC/rqc.exe: No such file or directory
+srun: error: nid00426: tasks 0-1: Exited with exit code 2
+srun: Terminating job step 14162969.16
+
+CONFIGURATION: n x m = 5x5, depth = 20, nodes = 1
+slurmstepd: error: execve(): /scratch/snx3000/mazzolag/qsim/Intel-QS/./randomQC/rqc.exe: No such file or directory
+slurmstepd: error: execve(): /scratch/snx3000/mazzolag/qsim/Intel-QS/./randomQC/rqc.exe: No such file or directory
+srun: error: nid00426: tasks 0-1: Exited with exit code 2
+srun: Terminating job step 14162969.17
+
+CONFIGURATION: n x m = 5x6, depth = 20, nodes = 1
+slurmstepd: error: execve(): /scratch/snx3000/mazzolag/qsim/Intel-QS/./randomQC/rqc.exe: No such file or directory
+slurmstepd: error: execve(): /scratch/snx3000/mazzolag/qsim/Intel-QS/./randomQC/rqc.exe: No such file or directory
+srun: error: nid00426: tasks 0-1: Exited with exit code 2
+srun: Terminating job step 14162969.18
+
+CONFIGURATION: n x m = 5x5, depth = 40, nodes = 1
+slurmstepd: error: execve(): /scratch/snx3000/mazzolag/qsim/Intel-QS/./randomQC/rqc.exe: No such file or directory
+slurmstepd: error: execve(): /scratch/snx3000/mazzolag/qsim/Intel-QS/./randomQC/rqc.exe: No such file or directory
+srun: error: nid00426: tasks 0-1: Exited with exit code 2
+srun: Terminating job step 14162969.19
+
+CONFIGURATION: n x m = 5x6, depth = 40, nodes = 1
+slurmstepd: error: execve(): /scratch/snx3000/mazzolag/qsim/Intel-QS/./randomQC/rqc.exe: No such file or directory
+slurmstepd: error: execve(): /scratch/snx3000/mazzolag/qsim/Intel-QS/./randomQC/rqc.exe: No such file or directory
+srun: error: nid00426: tasks 0-1: Exited with exit code 2
+srun: Terminating job step 14162969.20
+
+CONFIGURATION: n x m = 5x5, depth = 60, nodes = 1
+slurmstepd: error: execve(): /scratch/snx3000/mazzolag/qsim/Intel-QS/./randomQC/rqc.exe: No such file or directory
+slurmstepd: error: execve(): /scratch/snx3000/mazzolag/qsim/Intel-QS/./randomQC/rqc.exe: No such file or directory
+srun: error: nid00426: tasks 0-1: Exited with exit code 2
+srun: Terminating job step 14162969.21
+
+CONFIGURATION: n x m = 5x6, depth = 60, nodes = 1
+slurmstepd: error: execve(): /scratch/snx3000/mazzolag/qsim/Intel-QS/./randomQC/rqc.exe: No such file or directory
+slurmstepd: error: execve(): /scratch/snx3000/mazzolag/qsim/Intel-QS/./randomQC/rqc.exe: No such file or directory
+srun: error: nid00426: tasks 0-1: Exited with exit code 2
+srun: Terminating job step 14162969.22
+
+CONFIGURATION: n x m = 6x6, depth = 20, nodes = 1
+slurmstepd: error: execve(): /scratch/snx3000/mazzolag/qsim/Intel-QS/./randomQC/rqc.exe: No such file or directory
+slurmstepd: error: execve(): /scratch/snx3000/mazzolag/qsim/Intel-QS/./randomQC/rqc.exe: No such file or directory
+srun: error: nid00426: tasks 0-1: Exited with exit code 2
+srun: Terminating job step 14162969.23
+
+CONFIGURATION: n x m = 6x7, depth = 20, nodes = 1
+slurmstepd: error: execve(): /scratch/snx3000/mazzolag/qsim/Intel-QS/./randomQC/rqc.exe: No such file or directory
+slurmstepd: error: execve(): /scratch/snx3000/mazzolag/qsim/Intel-QS/./randomQC/rqc.exe: No such file or directory
+srun: error: nid00426: tasks 0-1: Exited with exit code 2
+srun: Terminating job step 14162969.24
+
+CONFIGURATION: n x m = 6x6, depth = 40, nodes = 1
+slurmstepd: error: execve(): /scratch/snx3000/mazzolag/qsim/Intel-QS/./randomQC/rqc.exe: No such file or directory
+slurmstepd: error: execve(): /scratch/snx3000/mazzolag/qsim/Intel-QS/./randomQC/rqc.exe: No such file or directory
+srun: error: nid00426: tasks 0-1: Exited with exit code 2
+srun: Terminating job step 14162969.25
+
+CONFIGURATION: n x m = 6x7, depth = 40, nodes = 1
+slurmstepd: error: execve(): /scratch/snx3000/mazzolag/qsim/Intel-QS/./randomQC/rqc.exe: No such file or directory
+slurmstepd: error: execve(): /scratch/snx3000/mazzolag/qsim/Intel-QS/./randomQC/rqc.exe: No such file or directory
+srun: error: nid00426: tasks 0-1: Exited with exit code 2
+srun: Terminating job step 14162969.26
+
+CONFIGURATION: n x m = 6x6, depth = 60, nodes = 1
+slurmstepd: error: execve(): /scratch/snx3000/mazzolag/qsim/Intel-QS/./randomQC/rqc.exe: No such file or directory
+slurmstepd: error: execve(): /scratch/snx3000/mazzolag/qsim/Intel-QS/./randomQC/rqc.exe: No such file or directory
+srun: error: nid00426: tasks 0-1: Exited with exit code 2
+srun: Terminating job step 14162969.27
+
+CONFIGURATION: n x m = 6x7, depth = 60, nodes = 1
+slurmstepd: error: execve(): /scratch/snx3000/mazzolag/qsim/Intel-QS/./randomQC/rqc.exe: No such file or directory
+slurmstepd: error: execve(): /scratch/snx3000/mazzolag/qsim/Intel-QS/./randomQC/rqc.exe: No such file or directory
+srun: error: nid00426: tasks 0-1: Exited with exit code 2
+srun: Terminating job step 14162969.28
+
+ 
+Batch Job Summary Report for Job "script_1.sh" (14162969) on daint
+-----------------------------------------------------------------------------------------------------
+             Submit            Eligible               Start                 End    Elapsed  Timelimit 
+------------------- ------------------- ------------------- ------------------- ---------- ---------- 
+2019-05-21T18:02:00 2019-05-21T18:02:00 2019-05-21T18:02:02 2019-05-21T18:02:59   00:00:57   03:00:00 
+-----------------------------------------------------------------------------------------------------
+Username    Account     Partition   NNodes   Energy
+----------  ----------  ----------  ------  --------------
+mazzolag    csstaff     normal           1    5.16K joules
+ 
+This job did not utilize any GPUs
+ 
+----------------------------------------------------------
+Scratch File System        Files       Quota
+--------------------  ----------  ----------
+/scratch/snx3000           18792     1000000
+ 
