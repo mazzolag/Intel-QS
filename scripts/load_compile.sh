@@ -18,5 +18,4 @@ echo "  BUILDING AND COMPILATION"
 echo "============================="
 
 cd ../
-make clean
 make all -j

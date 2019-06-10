@@ -1,0 +1,415 @@
+CONFIGURATION: n x m = 4x4, depth = 20, nodes = 1
+[  0] glbrank:      0 mynodeid:      0 nnodes:      1 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  1] glbrank:      1 mynodeid:      0 nnodes:      1 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+Specialization is off
+Total storage per node  = 1.50 MB 
+      storage per state = 1.00 MB 
+      temporary storage = 0.50000 MB 
+Specialization is off
+Total storage per node  = 1.50 MB 
+      storage per state = 1.00 MB 
+      temporary storage = 0.50000 MB 
+Specialization is off
+Total storage per node  = 1.50 MB 
+      storage per state = 1.00 MB 
+      temporary storage = 0.50000 MB 
+Specialization is off
+Total storage per node  = 1.50 MB 
+      storage per state = 1.00 MB 
+      temporary storage = 0.50000 MB 
+Specialization is off
+Total storage per node  = 1.50 MB 
+      storage per state = 1.00 MB 
+      temporary storage = 0.50000 MB 
+Specialization is off
+Total storage per node  = 1.50 MB 
+      storage per state = 1.00 MB 
+      temporary storage = 0.50000 MB 
+Specialization is off
+Total storage per node  = 1.50 MB 
+      storage per state = 1.00 MB 
+      temporary storage = 0.50000 MB 
+Specialization is off
+Total storage per node  = 1.50 MB 
+      storage per state = 1.00 MB 
+      temporary storage = 0.50000 MB 
+Specialization is off
+Total storage per node  = 1.50 MB 
+      storage per state = 1.00 MB 
+      temporary storage = 0.50000 MB 
+Specialization is off
+Total storage per node  = 1.50 MB 
+      storage per state = 1.00 MB 
+      temporary storage = 0.50000 MB 
+Duration [ms] = 17, 16, 14, 15, 14, 15, 14, 15, 15, 14
+Avg time [ms] = 14, Std deviation = 1
+--------------------------------
+CONFIGURATION: n x m = 4x5, depth = 20, nodes = 1
+[  0] glbrank:      0 mynodeid:      0 nnodes:      1 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  1] glbrank:      1 mynodeid:      0 nnodes:      1 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+Specialization is off
+Total storage per node  = 24.00 MB 
+      storage per state = 16.00 MB 
+      temporary storage = 8.00000 MB 
+Specialization is off
+Total storage per node  = 24.00 MB 
+      storage per state = 16.00 MB 
+      temporary storage = 8.00000 MB 
+Specialization is off
+Total storage per node  = 24.00 MB 
+      storage per state = 16.00 MB 
+      temporary storage = 8.00000 MB 
+Specialization is off
+Total storage per node  = 24.00 MB 
+      storage per state = 16.00 MB 
+      temporary storage = 8.00000 MB 
+Specialization is off
+Total storage per node  = 24.00 MB 
+      storage per state = 16.00 MB 
+      temporary storage = 8.00000 MB 
+Specialization is off
+Total storage per node  = 24.00 MB 
+      storage per state = 16.00 MB 
+      temporary storage = 8.00000 MB 
+Specialization is off
+Total storage per node  = 24.00 MB 
+      storage per state = 16.00 MB 
+      temporary storage = 8.00000 MB 
+Specialization is off
+Total storage per node  = 24.00 MB 
+      storage per state = 16.00 MB 
+      temporary storage = 8.00000 MB 
+Specialization is off
+Total storage per node  = 24.00 MB 
+      storage per state = 16.00 MB 
+      temporary storage = 8.00000 MB 
+Specialization is off
+Total storage per node  = 24.00 MB 
+      storage per state = 16.00 MB 
+      temporary storage = 8.00000 MB 
+Duration [ms] = 311, 288, 274, 264, 255, 255, 255, 256, 255, 255
+Avg time [ms] = 266, Std deviation = 18
+--------------------------------
+CONFIGURATION: n x m = 4x4, depth = 40, nodes = 1
+[  0] glbrank:      0 mynodeid:      0 nnodes:      1 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  1] glbrank:      1 mynodeid:      0 nnodes:      1 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+Specialization is off
+Total storage per node  = 1.50 MB 
+      storage per state = 1.00 MB 
+      temporary storage = 0.50000 MB 
+Specialization is off
+Total storage per node  = 1.50 MB 
+      storage per state = 1.00 MB 
+      temporary storage = 0.50000 MB 
+Specialization is off
+Total storage per node  = 1.50 MB 
+      storage per state = 1.00 MB 
+      temporary storage = 0.50000 MB 
+Specialization is off
+Total storage per node  = 1.50 MB 
+      storage per state = 1.00 MB 
+      temporary storage = 0.50000 MB 
+Specialization is off
+Total storage per node  = 1.50 MB 
+      storage per state = 1.00 MB 
+      temporary storage = 0.50000 MB 
+Specialization is off
+Total storage per node  = 1.50 MB 
+      storage per state = 1.00 MB 
+      temporary storage = 0.50000 MB 
+Specialization is off
+Total storage per node  = 1.50 MB 
+      storage per state = 1.00 MB 
+      temporary storage = 0.50000 MB 
+Specialization is off
+Total storage per node  = 1.50 MB 
+      storage per state = 1.00 MB 
+      temporary storage = 0.50000 MB 
+Specialization is off
+Total storage per node  = 1.50 MB 
+      storage per state = 1.00 MB 
+      temporary storage = 0.50000 MB 
+Specialization is off
+Total storage per node  = 1.50 MB 
+      storage per state = 1.00 MB 
+      temporary storage = 0.50000 MB 
+Duration [ms] = 28, 26, 25, 25, 25, 25, 24, 25, 25, 25
+Avg time [ms] = 25, Std deviation = 1
+--------------------------------
+CONFIGURATION: n x m = 4x5, depth = 40, nodes = 1
+[  0] glbrank:      0 mynodeid:      0 nnodes:      1 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  1] glbrank:      1 mynodeid:      0 nnodes:      1 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+Specialization is off
+Total storage per node  = 24.00 MB 
+      storage per state = 16.00 MB 
+      temporary storage = 8.00000 MB 
+Specialization is off
+Total storage per node  = 24.00 MB 
+      storage per state = 16.00 MB 
+      temporary storage = 8.00000 MB 
+Specialization is off
+Total storage per node  = 24.00 MB 
+      storage per state = 16.00 MB 
+      temporary storage = 8.00000 MB 
+Specialization is off
+Total storage per node  = 24.00 MB 
+      storage per state = 16.00 MB 
+      temporary storage = 8.00000 MB 
+Specialization is off
+Total storage per node  = 24.00 MB 
+      storage per state = 16.00 MB 
+      temporary storage = 8.00000 MB 
+Specialization is off
+Total storage per node  = 24.00 MB 
+      storage per state = 16.00 MB 
+      temporary storage = 8.00000 MB 
+Specialization is off
+Total storage per node  = 24.00 MB 
+      storage per state = 16.00 MB 
+      temporary storage = 8.00000 MB 
+Specialization is off
+Total storage per node  = 24.00 MB 
+      storage per state = 16.00 MB 
+      temporary storage = 8.00000 MB 
+Specialization is off
+Total storage per node  = 24.00 MB 
+      storage per state = 16.00 MB 
+      temporary storage = 8.00000 MB 
+Specialization is off
+Total storage per node  = 24.00 MB 
+      storage per state = 16.00 MB 
+      temporary storage = 8.00000 MB 
+Duration [ms] = 454, 450, 429, 430, 428, 430, 427, 430, 430, 429
+Avg time [ms] = 433, Std deviation = 9
+--------------------------------
+CONFIGURATION: n x m = 4x4, depth = 60, nodes = 1
+[  0] glbrank:      0 mynodeid:      0 nnodes:      1 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  1] glbrank:      1 mynodeid:      0 nnodes:      1 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+Specialization is off
+Total storage per node  = 1.50 MB 
+      storage per state = 1.00 MB 
+      temporary storage = 0.50000 MB 
+Specialization is off
+Total storage per node  = 1.50 MB 
+      storage per state = 1.00 MB 
+      temporary storage = 0.50000 MB 
+Specialization is off
+Total storage per node  = 1.50 MB 
+      storage per state = 1.00 MB 
+      temporary storage = 0.50000 MB 
+Specialization is off
+Total storage per node  = 1.50 MB 
+      storage per state = 1.00 MB 
+      temporary storage = 0.50000 MB 
+Specialization is off
+Total storage per node  = 1.50 MB 
+      storage per state = 1.00 MB 
+      temporary storage = 0.50000 MB 
+Specialization is off
+Total storage per node  = 1.50 MB 
+      storage per state = 1.00 MB 
+      temporary storage = 0.50000 MB 
+Specialization is off
+Total storage per node  = 1.50 MB 
+      storage per state = 1.00 MB 
+      temporary storage = 0.50000 MB 
+Specialization is off
+Total storage per node  = 1.50 MB 
+      storage per state = 1.00 MB 
+      temporary storage = 0.50000 MB 
+Specialization is off
+Total storage per node  = 1.50 MB 
+      storage per state = 1.00 MB 
+      temporary storage = 0.50000 MB 
+Specialization is off
+Total storage per node  = 1.50 MB 
+      storage per state = 1.00 MB 
+      temporary storage = 0.50000 MB 
+Duration [ms] = 41, 39, 38, 38, 38, 39, 38, 38, 35, 35
+Avg time [ms] = 37, Std deviation = 1
+--------------------------------
+CONFIGURATION: n x m = 4x5, depth = 60, nodes = 1
+[  0] glbrank:      0 mynodeid:      0 nnodes:      1 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  1] glbrank:      1 mynodeid:      0 nnodes:      1 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+Specialization is off
+Total storage per node  = 24.00 MB 
+      storage per state = 16.00 MB 
+      temporary storage = 8.00000 MB 
+Specialization is off
+Total storage per node  = 24.00 MB 
+      storage per state = 16.00 MB 
+      temporary storage = 8.00000 MB 
+Specialization is off
+Total storage per node  = 24.00 MB 
+      storage per state = 16.00 MB 
+      temporary storage = 8.00000 MB 
+Specialization is off
+Total storage per node  = 24.00 MB 
+      storage per state = 16.00 MB 
+      temporary storage = 8.00000 MB 
+Specialization is off
+Total storage per node  = 24.00 MB 
+      storage per state = 16.00 MB 
+      temporary storage = 8.00000 MB 
+Specialization is off
+Total storage per node  = 24.00 MB 
+      storage per state = 16.00 MB 
+      temporary storage = 8.00000 MB 
+Specialization is off
+Total storage per node  = 24.00 MB 
+      storage per state = 16.00 MB 
+      temporary storage = 8.00000 MB 
+Specialization is off
+Total storage per node  = 24.00 MB 
+      storage per state = 16.00 MB 
+      temporary storage = 8.00000 MB 
+Specialization is off
+Total storage per node  = 24.00 MB 
+      storage per state = 16.00 MB 
+      temporary storage = 8.00000 MB 
+Specialization is off
+Total storage per node  = 24.00 MB 
+      storage per state = 16.00 MB 
+      temporary storage = 8.00000 MB 
+Duration [ms] = 631, 625, 609, 607, 607, 607, 606, 610, 608, 606
+Avg time [ms] = 611, Std deviation = 8
+--------------------------------
+CONFIGURATION: n x m = 5x5, depth = 20, nodes = 1
+[  0] glbrank:      0 mynodeid:      0 nnodes:      1 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  1] glbrank:      1 mynodeid:      0 nnodes:      1 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+Specialization is off
+Total storage per node  = 768.00 MB 
+      storage per state = 512.00 MB 
+      temporary storage = 256.00000 MB 
+Specialization is off
+Total storage per node  = 768.00 MB 
+      storage per state = 512.00 MB 
+      temporary storage = 256.00000 MB 
+Specialization is off
+Total storage per node  = 768.00 MB 
+      storage per state = 512.00 MB 
+      temporary storage = 256.00000 MB 
+Specialization is off
+Total storage per node  = 768.00 MB 
+      storage per state = 512.00 MB 
+      temporary storage = 256.00000 MB 
+Specialization is off
+Total storage per node  = 768.00 MB 
+      storage per state = 512.00 MB 
+      temporary storage = 256.00000 MB 
+Specialization is off
+Total storage per node  = 768.00 MB 
+      storage per state = 512.00 MB 
+      temporary storage = 256.00000 MB 
+Specialization is off
+Total storage per node  = 768.00 MB 
+      storage per state = 512.00 MB 
+      temporary storage = 256.00000 MB 
+Specialization is off
+Total storage per node  = 768.00 MB 
+      storage per state = 512.00 MB 
+      temporary storage = 256.00000 MB 
+Specialization is off
+Total storage per node  = 768.00 MB 
+      storage per state = 512.00 MB 
+      temporary storage = 256.00000 MB 
+Specialization is off
+Total storage per node  = 768.00 MB 
+      storage per state = 512.00 MB 
+      temporary storage = 256.00000 MB 
+Duration [ms] = 14141, 14121, 14237, 14232, 14293, 14352, 14304, 14192, 14310, 14274
+Avg time [ms] = 14245, Std deviation = 71
+--------------------------------
+CONFIGURATION: n x m = 5x6, depth = 20, nodes = 1
+[  0] glbrank:      0 mynodeid:      0 nnodes:      1 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  1] glbrank:      1 mynodeid:      0 nnodes:      1 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+Specialization is off
+Total storage per node  = 24576.00 MB 
+      storage per state = 16384.00 MB 
+      temporary storage = 8192.00000 MB 
+Specialization is off
+Total storage per node  = 24576.00 MB 
+      storage per state = 16384.00 MB 
+      temporary storage = 8192.00000 MB 
+Specialization is off
+Total storage per node  = 24576.00 MB 
+      storage per state = 16384.00 MB 
+      temporary storage = 8192.00000 MB 
+Specialization is off
+Total storage per node  = 24576.00 MB 
+      storage per state = 16384.00 MB 
+      temporary storage = 8192.00000 MB 
+Specialization is off
+Total storage per node  = 24576.00 MB 
+      storage per state = 16384.00 MB 
+      temporary storage = 8192.00000 MB 
+Specialization is off
+Total storage per node  = 24576.00 MB 
+      storage per state = 16384.00 MB 
+      temporary storage = 8192.00000 MB 
+Specialization is off
+Total storage per node  = 24576.00 MB 
+      storage per state = 16384.00 MB 
+      temporary storage = 8192.00000 MB 
+Specialization is off
+Total storage per node  = 24576.00 MB 
+      storage per state = 16384.00 MB 
+      temporary storage = 8192.00000 MB 
+Specialization is off
+Total storage per node  = 24576.00 MB 
+      storage per state = 16384.00 MB 
+      temporary storage = 8192.00000 MB 
+Specialization is off
+Total storage per node  = 24576.00 MB 
+      storage per state = 16384.00 MB 
+      temporary storage = 8192.00000 MB 
+Duration [ms] = 543916, 543056, 544295, 539754, 541567, 540677, 540722, 545118, 543112, 541966
+Avg time [ms] = 542418, Std deviation = 1669
+--------------------------------
+CONFIGURATION: n x m = 5x5, depth = 40, nodes = 1
+[  0] glbrank:      0 mynodeid:      0 nnodes:      1 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  1] glbrank:      1 mynodeid:      0 nnodes:      1 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+Specialization is off
+Total storage per node  = 768.00 MB 
+      storage per state = 512.00 MB 
+      temporary storage = 256.00000 MB 
+Specialization is off
+Total storage per node  = 768.00 MB 
+      storage per state = 512.00 MB 
+      temporary storage = 256.00000 MB 
+Specialization is off
+Total storage per node  = 768.00 MB 
+      storage per state = 512.00 MB 
+      temporary storage = 256.00000 MB 
+Specialization is off
+Total storage per node  = 768.00 MB 
+      storage per state = 512.00 MB 
+      temporary storage = 256.00000 MB 
+Specialization is off
+Total storage per node  = 768.00 MB 
+      storage per state = 512.00 MB 
+      temporary storage = 256.00000 MB 
+Specialization is off
+Total storage per node  = 768.00 MB 
+      storage per state = 512.00 MB 
+      temporary storage = 256.00000 MB 
+Specialization is off
+Total storage per node  = 768.00 MB 
+      storage per state = 512.00 MB 
+      temporary storage = 256.00000 MB 
+Specialization is off
+Total storage per node  = 768.00 MB 
+      storage per state = 512.00 MB 
+      temporary storage = 256.00000 MB 
+Specialization is off
+Total storage per node  = 768.00 MB 
+      storage per state = 512.00 MB 
+      temporary storage = 256.00000 MB 
+Specialization is off
+Total storage per node  = 768.00 MB 
+      storage per state = 512.00 MB 
+      temporary storage = 256.00000 MB 
+Duration [ms] = 24050, 24139, 24096, 23870, 23993, 24128, 24064, 24169, 24067, 24131
+Avg time [ms] = 24070, Std deviation = 82
+--------------------------------
+CONFIGURATION: n x m = 5x6, depth = 40, nodes = 1

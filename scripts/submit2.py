@@ -9,7 +9,7 @@ n_tasks_per_node = 2
 n_threads_per_task = 18
 
 # parameters
-N_dj = [16, 19, 22, 24, 26, 27, 28, 29, 30, 31, 33]
+N_dj = []
 nrep = 10
 N_rqc = [4, 5]
 depth_rqc = [20, 40, 60]
@@ -37,7 +37,7 @@ def get_string_list(str_list):
     print("Result = ", result)
     return result
 
-n_time = "05:00:00"
+n_time = "03:00:00"
 
 template_file = "experiment.sh"
 

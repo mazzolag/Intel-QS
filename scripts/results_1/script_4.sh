@@ -1,9 +1,9 @@
 #!/bin/bash -l
-#SBATCH --time=GLOBAL_TIME
-#SBATCH --nodes=GLOBAL_NODES
+#SBATCH --time=05:00:00
+#SBATCH --nodes=4
 #SBATCH --constraint=mc
 #SBATCH --partition=normal
-#SBATCH --output="GLOBAL_DIRECTORY/script_GLOBAL_NODES.out"
+#SBATCH --output="24:05:2019-12:30:56/script_4.out"
 #set -x
 
 echo "================================"
@@ -21,7 +21,7 @@ export CXX=`which CC`
 export CRAYPE_LINK_TYPE=dynamic
 
 
-directory=GLOBAL_DIRECTORY
+directory=24:05:2019-12:30:56
 
 prefix=/scratch/snx3000/mazzolag/qsim/Intel-QS
 
@@ -75,25 +75,25 @@ run_rqc(){
 
 IFS=
 
-N_dj=GLOBAL_N_DJ
-nrep=GLOBAL_NREP
+N_dj=(16 19 22 24 26 27 28 29 30 31 33 )
+nrep=10
 
-N_rqc=GLOBAL_N_RQC
-depth_rqc=GLOBAL_DEPTH_RQC
-nrep_rqc=GLOBAL_NREP_RQC
+N_rqc=(4 5 )
+depth_rqc=(20 40 60 )
+nrep_rqc=10_RQC
 
 
-n_tasks_per_node=GLOBAL_TASKS
-n_threads_per_task=GLOBAL_THREADS
+n_tasks_per_node=2
+n_threads_per_task=18
 
-nodes=GLOBAL_NODES
+nodes=4
 export OMP_NUM_THREADS=$n_threads_per_task
 
 
 exec_dj="./examples_giulia/dj.exe"
 results_dj="$prefix/scripts/$directory/dj_${nodes}.txt"
 
-exec_rqc="./examples_giulia/rqc.exe"
+exec_rqc="./randomQC/rqc.exe"
 results_rqc="$prefix/scripts/$directory/rqc_${nodes}.txt"
 
 

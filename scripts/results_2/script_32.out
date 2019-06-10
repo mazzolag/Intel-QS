@@ -1,0 +1,1305 @@
+================================
+       RUNNING BENCHMARKS
+================================
+CONFIGURATION: n x m = 4x4, depth = 20, nodes = 32
+[  0] glbrank:      0 mynodeid:      0 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  1] glbrank:      1 mynodeid:      0 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  2] glbrank:      2 mynodeid:      1 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  3] glbrank:      3 mynodeid:      1 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  4] glbrank:      4 mynodeid:      2 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  5] glbrank:      5 mynodeid:      2 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  6] glbrank:      6 mynodeid:      3 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  7] glbrank:      7 mynodeid:      3 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  8] glbrank:      8 mynodeid:      4 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  9] glbrank:      9 mynodeid:      4 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 10] glbrank:     10 mynodeid:      5 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 11] glbrank:     11 mynodeid:      5 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 12] glbrank:     12 mynodeid:      6 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 13] glbrank:     13 mynodeid:      6 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 14] glbrank:     14 mynodeid:      7 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 15] glbrank:     15 mynodeid:      7 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 16] glbrank:     16 mynodeid:      8 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 17] glbrank:     17 mynodeid:      8 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 18] glbrank:     18 mynodeid:      9 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 19] glbrank:     19 mynodeid:      9 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 20] glbrank:     20 mynodeid:     10 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 21] glbrank:     21 mynodeid:     10 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 22] glbrank:     22 mynodeid:     11 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 23] glbrank:     23 mynodeid:     11 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 24] glbrank:     24 mynodeid:     12 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 25] glbrank:     25 mynodeid:     12 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 26] glbrank:     26 mynodeid:     13 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 27] glbrank:     27 mynodeid:     13 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 28] glbrank:     28 mynodeid:     14 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 29] glbrank:     29 mynodeid:     14 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 30] glbrank:     30 mynodeid:     15 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 31] glbrank:     31 mynodeid:     15 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 32] glbrank:     32 mynodeid:     16 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 33] glbrank:     33 mynodeid:     16 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 34] glbrank:     34 mynodeid:     17 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 35] glbrank:     35 mynodeid:     17 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 36] glbrank:     36 mynodeid:     18 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 37] glbrank:     37 mynodeid:     18 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 38] glbrank:     38 mynodeid:     19 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 39] glbrank:     39 mynodeid:     19 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 40] glbrank:     40 mynodeid:     20 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 41] glbrank:     41 mynodeid:     20 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 42] glbrank:     42 mynodeid:     21 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 43] glbrank:     43 mynodeid:     21 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 44] glbrank:     44 mynodeid:     22 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 45] glbrank:     45 mynodeid:     22 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 46] glbrank:     46 mynodeid:     23 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 47] glbrank:     47 mynodeid:     23 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 48] glbrank:     48 mynodeid:     24 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 49] glbrank:     49 mynodeid:     24 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 50] glbrank:     50 mynodeid:     25 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 51] glbrank:     51 mynodeid:     25 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 52] glbrank:     52 mynodeid:     26 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 53] glbrank:     53 mynodeid:     26 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 54] glbrank:     54 mynodeid:     27 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 55] glbrank:     55 mynodeid:     27 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 56] glbrank:     56 mynodeid:     28 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 57] glbrank:     57 mynodeid:     28 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 58] glbrank:     58 mynodeid:     29 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 59] glbrank:     59 mynodeid:     29 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 60] glbrank:     60 mynodeid:     30 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 61] glbrank:     61 mynodeid:     30 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 62] glbrank:     62 mynodeid:     31 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 63] glbrank:     63 mynodeid:     31 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+Specialization is off
+Total storage per node  = 0.05 MB 
+      storage per state = 0.03 MB 
+      temporary storage = 0.01562 MB 
+Specialization is off
+Total storage per node  = 0.05 MB 
+      storage per state = 0.03 MB 
+      temporary storage = 0.01562 MB 
+Specialization is off
+Total storage per node  = 0.05 MB 
+      storage per state = 0.03 MB 
+      temporary storage = 0.01562 MB 
+Specialization is off
+Total storage per node  = 0.05 MB 
+      storage per state = 0.03 MB 
+      temporary storage = 0.01562 MB 
+Specialization is off
+Total storage per node  = 0.05 MB 
+      storage per state = 0.03 MB 
+      temporary storage = 0.01562 MB 
+Specialization is off
+Total storage per node  = 0.05 MB 
+      storage per state = 0.03 MB 
+      temporary storage = 0.01562 MB 
+Specialization is off
+Total storage per node  = 0.05 MB 
+      storage per state = 0.03 MB 
+      temporary storage = 0.01562 MB 
+Specialization is off
+Total storage per node  = 0.05 MB 
+      storage per state = 0.03 MB 
+      temporary storage = 0.01562 MB 
+Specialization is off
+Total storage per node  = 0.05 MB 
+      storage per state = 0.03 MB 
+      temporary storage = 0.01562 MB 
+Specialization is off
+Total storage per node  = 0.05 MB 
+      storage per state = 0.03 MB 
+      temporary storage = 0.01562 MB 
+Duration [ms] = 111, 24, 14, 12, 9, 9, 7, 12, 12, 9
+Avg time [ms] = 21, Std deviation = 30
+CONFIGURATION: n x m = 4x5, depth = 20, nodes = 32
+[  0] glbrank:      0 mynodeid:      0 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  1] glbrank:      1 mynodeid:      0 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  2] glbrank:      2 mynodeid:      1 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  3] glbrank:      3 mynodeid:      1 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  4] glbrank:      4 mynodeid:      2 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  5] glbrank:      5 mynodeid:      2 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  6] glbrank:      6 mynodeid:      3 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  7] glbrank:      7 mynodeid:      3 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  8] glbrank:      8 mynodeid:      4 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  9] glbrank:      9 mynodeid:      4 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 10] glbrank:     10 mynodeid:      5 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 11] glbrank:     11 mynodeid:      5 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 12] glbrank:     12 mynodeid:      6 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 13] glbrank:     13 mynodeid:      6 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 14] glbrank:     14 mynodeid:      7 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 15] glbrank:     15 mynodeid:      7 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 16] glbrank:     16 mynodeid:      8 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 17] glbrank:     17 mynodeid:      8 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 18] glbrank:     18 mynodeid:      9 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 19] glbrank:     19 mynodeid:      9 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 20] glbrank:     20 mynodeid:     10 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 21] glbrank:     21 mynodeid:     10 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 22] glbrank:     22 mynodeid:     11 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 23] glbrank:     23 mynodeid:     11 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 24] glbrank:     24 mynodeid:     12 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 25] glbrank:     25 mynodeid:     12 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 26] glbrank:     26 mynodeid:     13 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 27] glbrank:     27 mynodeid:     13 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 28] glbrank:     28 mynodeid:     14 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 29] glbrank:     29 mynodeid:     14 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 30] glbrank:     30 mynodeid:     15 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 31] glbrank:     31 mynodeid:     15 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 32] glbrank:     32 mynodeid:     16 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 33] glbrank:     33 mynodeid:     16 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 34] glbrank:     34 mynodeid:     17 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 35] glbrank:     35 mynodeid:     17 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 36] glbrank:     36 mynodeid:     18 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 37] glbrank:     37 mynodeid:     18 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 38] glbrank:     38 mynodeid:     19 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 39] glbrank:     39 mynodeid:     19 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 40] glbrank:     40 mynodeid:     20 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 41] glbrank:     41 mynodeid:     20 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 42] glbrank:     42 mynodeid:     21 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 43] glbrank:     43 mynodeid:     21 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 44] glbrank:     44 mynodeid:     22 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 45] glbrank:     45 mynodeid:     22 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 46] glbrank:     46 mynodeid:     23 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 47] glbrank:     47 mynodeid:     23 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 48] glbrank:     48 mynodeid:     24 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 49] glbrank:     49 mynodeid:     24 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 50] glbrank:     50 mynodeid:     25 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 51] glbrank:     51 mynodeid:     25 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 52] glbrank:     52 mynodeid:     26 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 53] glbrank:     53 mynodeid:     26 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 54] glbrank:     54 mynodeid:     27 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 55] glbrank:     55 mynodeid:     27 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 56] glbrank:     56 mynodeid:     28 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 57] glbrank:     57 mynodeid:     28 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 58] glbrank:     58 mynodeid:     29 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 59] glbrank:     59 mynodeid:     29 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 60] glbrank:     60 mynodeid:     30 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 61] glbrank:     61 mynodeid:     30 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 62] glbrank:     62 mynodeid:     31 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 63] glbrank:     63 mynodeid:     31 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+Specialization is off
+Total storage per node  = 0.75 MB 
+      storage per state = 0.50 MB 
+      temporary storage = 0.25000 MB 
+Specialization is off
+Total storage per node  = 0.75 MB 
+      storage per state = 0.50 MB 
+      temporary storage = 0.25000 MB 
+Specialization is off
+Total storage per node  = 0.75 MB 
+      storage per state = 0.50 MB 
+      temporary storage = 0.25000 MB 
+Specialization is off
+Total storage per node  = 0.75 MB 
+      storage per state = 0.50 MB 
+      temporary storage = 0.25000 MB 
+Specialization is off
+Total storage per node  = 0.75 MB 
+      storage per state = 0.50 MB 
+      temporary storage = 0.25000 MB 
+Specialization is off
+Total storage per node  = 0.75 MB 
+      storage per state = 0.50 MB 
+      temporary storage = 0.25000 MB 
+Specialization is off
+Total storage per node  = 0.75 MB 
+      storage per state = 0.50 MB 
+      temporary storage = 0.25000 MB 
+Specialization is off
+Total storage per node  = 0.75 MB 
+      storage per state = 0.50 MB 
+      temporary storage = 0.25000 MB 
+Specialization is off
+Total storage per node  = 0.75 MB 
+      storage per state = 0.50 MB 
+      temporary storage = 0.25000 MB 
+Specialization is off
+Total storage per node  = 0.75 MB 
+      storage per state = 0.50 MB 
+      temporary storage = 0.25000 MB 
+Duration [ms] = 100, 77, 49, 38, 45, 32, 50, 50, 40, 50
+Avg time [ms] = 53, Std deviation = 19
+CONFIGURATION: n x m = 4x4, depth = 40, nodes = 32
+[  0] glbrank:      0 mynodeid:      0 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  1] glbrank:      1 mynodeid:      0 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  2] glbrank:      2 mynodeid:      1 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  3] glbrank:      3 mynodeid:      1 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  4] glbrank:      4 mynodeid:      2 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  5] glbrank:      5 mynodeid:      2 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  6] glbrank:      6 mynodeid:      3 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  7] glbrank:      7 mynodeid:      3 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  8] glbrank:      8 mynodeid:      4 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  9] glbrank:      9 mynodeid:      4 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 10] glbrank:     10 mynodeid:      5 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 11] glbrank:     11 mynodeid:      5 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 12] glbrank:     12 mynodeid:      6 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 13] glbrank:     13 mynodeid:      6 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 14] glbrank:     14 mynodeid:      7 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 15] glbrank:     15 mynodeid:      7 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 16] glbrank:     16 mynodeid:      8 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 17] glbrank:     17 mynodeid:      8 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 18] glbrank:     18 mynodeid:      9 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 19] glbrank:     19 mynodeid:      9 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 20] glbrank:     20 mynodeid:     10 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 21] glbrank:     21 mynodeid:     10 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 22] glbrank:     22 mynodeid:     11 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 23] glbrank:     23 mynodeid:     11 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 24] glbrank:     24 mynodeid:     12 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 25] glbrank:     25 mynodeid:     12 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 26] glbrank:     26 mynodeid:     13 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 27] glbrank:     27 mynodeid:     13 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 28] glbrank:     28 mynodeid:     14 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 29] glbrank:     29 mynodeid:     14 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 30] glbrank:     30 mynodeid:     15 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 31] glbrank:     31 mynodeid:     15 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 32] glbrank:     32 mynodeid:     16 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 33] glbrank:     33 mynodeid:     16 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 34] glbrank:     34 mynodeid:     17 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 35] glbrank:     35 mynodeid:     17 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 36] glbrank:     36 mynodeid:     18 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 37] glbrank:     37 mynodeid:     18 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 38] glbrank:     38 mynodeid:     19 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 39] glbrank:     39 mynodeid:     19 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 40] glbrank:     40 mynodeid:     20 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 41] glbrank:     41 mynodeid:     20 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 42] glbrank:     42 mynodeid:     21 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 43] glbrank:     43 mynodeid:     21 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 44] glbrank:     44 mynodeid:     22 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 45] glbrank:     45 mynodeid:     22 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 46] glbrank:     46 mynodeid:     23 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 47] glbrank:     47 mynodeid:     23 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 48] glbrank:     48 mynodeid:     24 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 49] glbrank:     49 mynodeid:     24 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 50] glbrank:     50 mynodeid:     25 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 51] glbrank:     51 mynodeid:     25 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 52] glbrank:     52 mynodeid:     26 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 53] glbrank:     53 mynodeid:     26 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 54] glbrank:     54 mynodeid:     27 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 55] glbrank:     55 mynodeid:     27 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 56] glbrank:     56 mynodeid:     28 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 57] glbrank:     57 mynodeid:     28 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 58] glbrank:     58 mynodeid:     29 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 59] glbrank:     59 mynodeid:     29 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 60] glbrank:     60 mynodeid:     30 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 61] glbrank:     61 mynodeid:     30 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 62] glbrank:     62 mynodeid:     31 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 63] glbrank:     63 mynodeid:     31 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+Specialization is off
+Total storage per node  = 0.05 MB 
+      storage per state = 0.03 MB 
+      temporary storage = 0.01562 MB 
+Specialization is off
+Total storage per node  = 0.05 MB 
+      storage per state = 0.03 MB 
+      temporary storage = 0.01562 MB 
+Specialization is off
+Total storage per node  = 0.05 MB 
+      storage per state = 0.03 MB 
+      temporary storage = 0.01562 MB 
+Specialization is off
+Total storage per node  = 0.05 MB 
+      storage per state = 0.03 MB 
+      temporary storage = 0.01562 MB 
+Specialization is off
+Total storage per node  = 0.05 MB 
+      storage per state = 0.03 MB 
+      temporary storage = 0.01562 MB 
+Specialization is off
+Total storage per node  = 0.05 MB 
+      storage per state = 0.03 MB 
+      temporary storage = 0.01562 MB 
+Specialization is off
+Total storage per node  = 0.05 MB 
+      storage per state = 0.03 MB 
+      temporary storage = 0.01562 MB 
+Specialization is off
+Total storage per node  = 0.05 MB 
+      storage per state = 0.03 MB 
+      temporary storage = 0.01562 MB 
+Specialization is off
+Total storage per node  = 0.05 MB 
+      storage per state = 0.03 MB 
+      temporary storage = 0.01562 MB 
+Specialization is off
+Total storage per node  = 0.05 MB 
+      storage per state = 0.03 MB 
+      temporary storage = 0.01562 MB 
+Duration [ms] = 51, 19, 5, 5, 5, 6, 6, 8, 9, 7
+Avg time [ms] = 12, Std deviation = 13
+CONFIGURATION: n x m = 4x5, depth = 40, nodes = 32
+[  0] glbrank:      0 mynodeid:      0 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  1] glbrank:      1 mynodeid:      0 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  2] glbrank:      2 mynodeid:      1 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  3] glbrank:      3 mynodeid:      1 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  4] glbrank:      4 mynodeid:      2 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  5] glbrank:      5 mynodeid:      2 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  6] glbrank:      6 mynodeid:      3 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  7] glbrank:      7 mynodeid:      3 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  8] glbrank:      8 mynodeid:      4 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  9] glbrank:      9 mynodeid:      4 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 10] glbrank:     10 mynodeid:      5 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 11] glbrank:     11 mynodeid:      5 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 12] glbrank:     12 mynodeid:      6 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 13] glbrank:     13 mynodeid:      6 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 14] glbrank:     14 mynodeid:      7 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 15] glbrank:     15 mynodeid:      7 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 16] glbrank:     16 mynodeid:      8 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 17] glbrank:     17 mynodeid:      8 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 18] glbrank:     18 mynodeid:      9 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 19] glbrank:     19 mynodeid:      9 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 20] glbrank:     20 mynodeid:     10 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 21] glbrank:     21 mynodeid:     10 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 22] glbrank:     22 mynodeid:     11 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 23] glbrank:     23 mynodeid:     11 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 24] glbrank:     24 mynodeid:     12 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 25] glbrank:     25 mynodeid:     12 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 26] glbrank:     26 mynodeid:     13 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 27] glbrank:     27 mynodeid:     13 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 28] glbrank:     28 mynodeid:     14 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 29] glbrank:     29 mynodeid:     14 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 30] glbrank:     30 mynodeid:     15 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 31] glbrank:     31 mynodeid:     15 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 32] glbrank:     32 mynodeid:     16 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 33] glbrank:     33 mynodeid:     16 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 34] glbrank:     34 mynodeid:     17 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 35] glbrank:     35 mynodeid:     17 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 36] glbrank:     36 mynodeid:     18 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 37] glbrank:     37 mynodeid:     18 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 38] glbrank:     38 mynodeid:     19 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 39] glbrank:     39 mynodeid:     19 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 40] glbrank:     40 mynodeid:     20 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 41] glbrank:     41 mynodeid:     20 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 42] glbrank:     42 mynodeid:     21 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 43] glbrank:     43 mynodeid:     21 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 44] glbrank:     44 mynodeid:     22 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 45] glbrank:     45 mynodeid:     22 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 46] glbrank:     46 mynodeid:     23 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 47] glbrank:     47 mynodeid:     23 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 48] glbrank:     48 mynodeid:     24 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 49] glbrank:     49 mynodeid:     24 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 50] glbrank:     50 mynodeid:     25 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 51] glbrank:     51 mynodeid:     25 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 52] glbrank:     52 mynodeid:     26 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 53] glbrank:     53 mynodeid:     26 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 54] glbrank:     54 mynodeid:     27 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 55] glbrank:     55 mynodeid:     27 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 56] glbrank:     56 mynodeid:     28 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 57] glbrank:     57 mynodeid:     28 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 58] glbrank:     58 mynodeid:     29 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 59] glbrank:     59 mynodeid:     29 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 60] glbrank:     60 mynodeid:     30 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 61] glbrank:     61 mynodeid:     30 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 62] glbrank:     62 mynodeid:     31 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 63] glbrank:     63 mynodeid:     31 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+Specialization is off
+Total storage per node  = 0.75 MB 
+      storage per state = 0.50 MB 
+      temporary storage = 0.25000 MB 
+Specialization is off
+Total storage per node  = 0.75 MB 
+      storage per state = 0.50 MB 
+      temporary storage = 0.25000 MB 
+Specialization is off
+Total storage per node  = 0.75 MB 
+      storage per state = 0.50 MB 
+      temporary storage = 0.25000 MB 
+Specialization is off
+Total storage per node  = 0.75 MB 
+      storage per state = 0.50 MB 
+      temporary storage = 0.25000 MB 
+Specialization is off
+Total storage per node  = 0.75 MB 
+      storage per state = 0.50 MB 
+      temporary storage = 0.25000 MB 
+Specialization is off
+Total storage per node  = 0.75 MB 
+      storage per state = 0.50 MB 
+      temporary storage = 0.25000 MB 
+Specialization is off
+Total storage per node  = 0.75 MB 
+      storage per state = 0.50 MB 
+      temporary storage = 0.25000 MB 
+Specialization is off
+Total storage per node  = 0.75 MB 
+      storage per state = 0.50 MB 
+      temporary storage = 0.25000 MB 
+Specialization is off
+Total storage per node  = 0.75 MB 
+      storage per state = 0.50 MB 
+      temporary storage = 0.25000 MB 
+Specialization is off
+Total storage per node  = 0.75 MB 
+      storage per state = 0.50 MB 
+      temporary storage = 0.25000 MB 
+Duration [ms] = 231, 43, 49, 41, 62, 40, 44, 43, 60, 44
+Avg time [ms] = 65, Std deviation = 55
+CONFIGURATION: n x m = 4x4, depth = 60, nodes = 32
+[  0] glbrank:      0 mynodeid:      0 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  1] glbrank:      1 mynodeid:      0 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  2] glbrank:      2 mynodeid:      1 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  3] glbrank:      3 mynodeid:      1 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  4] glbrank:      4 mynodeid:      2 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  5] glbrank:      5 mynodeid:      2 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  6] glbrank:      6 mynodeid:      3 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  7] glbrank:      7 mynodeid:      3 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  8] glbrank:      8 mynodeid:      4 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  9] glbrank:      9 mynodeid:      4 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 10] glbrank:     10 mynodeid:      5 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 11] glbrank:     11 mynodeid:      5 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 12] glbrank:     12 mynodeid:      6 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 13] glbrank:     13 mynodeid:      6 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 14] glbrank:     14 mynodeid:      7 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 15] glbrank:     15 mynodeid:      7 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 16] glbrank:     16 mynodeid:      8 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 17] glbrank:     17 mynodeid:      8 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 18] glbrank:     18 mynodeid:      9 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 19] glbrank:     19 mynodeid:      9 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 20] glbrank:     20 mynodeid:     10 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 21] glbrank:     21 mynodeid:     10 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 22] glbrank:     22 mynodeid:     11 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 23] glbrank:     23 mynodeid:     11 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 24] glbrank:     24 mynodeid:     12 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 25] glbrank:     25 mynodeid:     12 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 26] glbrank:     26 mynodeid:     13 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 27] glbrank:     27 mynodeid:     13 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 28] glbrank:     28 mynodeid:     14 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 29] glbrank:     29 mynodeid:     14 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 30] glbrank:     30 mynodeid:     15 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 31] glbrank:     31 mynodeid:     15 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 32] glbrank:     32 mynodeid:     16 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 33] glbrank:     33 mynodeid:     16 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 34] glbrank:     34 mynodeid:     17 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 35] glbrank:     35 mynodeid:     17 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 36] glbrank:     36 mynodeid:     18 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 37] glbrank:     37 mynodeid:     18 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 38] glbrank:     38 mynodeid:     19 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 39] glbrank:     39 mynodeid:     19 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 40] glbrank:     40 mynodeid:     20 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 41] glbrank:     41 mynodeid:     20 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 42] glbrank:     42 mynodeid:     21 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 43] glbrank:     43 mynodeid:     21 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 44] glbrank:     44 mynodeid:     22 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 45] glbrank:     45 mynodeid:     22 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 46] glbrank:     46 mynodeid:     23 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 47] glbrank:     47 mynodeid:     23 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 48] glbrank:     48 mynodeid:     24 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 49] glbrank:     49 mynodeid:     24 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 50] glbrank:     50 mynodeid:     25 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 51] glbrank:     51 mynodeid:     25 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 52] glbrank:     52 mynodeid:     26 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 53] glbrank:     53 mynodeid:     26 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 54] glbrank:     54 mynodeid:     27 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 55] glbrank:     55 mynodeid:     27 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 56] glbrank:     56 mynodeid:     28 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 57] glbrank:     57 mynodeid:     28 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 58] glbrank:     58 mynodeid:     29 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 59] glbrank:     59 mynodeid:     29 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 60] glbrank:     60 mynodeid:     30 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 61] glbrank:     61 mynodeid:     30 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 62] glbrank:     62 mynodeid:     31 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 63] glbrank:     63 mynodeid:     31 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+Specialization is off
+Total storage per node  = 0.05 MB 
+      storage per state = 0.03 MB 
+      temporary storage = 0.01562 MB 
+Specialization is off
+Total storage per node  = 0.05 MB 
+      storage per state = 0.03 MB 
+      temporary storage = 0.01562 MB 
+Specialization is off
+Total storage per node  = 0.05 MB 
+      storage per state = 0.03 MB 
+      temporary storage = 0.01562 MB 
+Specialization is off
+Total storage per node  = 0.05 MB 
+      storage per state = 0.03 MB 
+      temporary storage = 0.01562 MB 
+Specialization is off
+Total storage per node  = 0.05 MB 
+      storage per state = 0.03 MB 
+      temporary storage = 0.01562 MB 
+Specialization is off
+Total storage per node  = 0.05 MB 
+      storage per state = 0.03 MB 
+      temporary storage = 0.01562 MB 
+Specialization is off
+Total storage per node  = 0.05 MB 
+      storage per state = 0.03 MB 
+      temporary storage = 0.01562 MB 
+Specialization is off
+Total storage per node  = 0.05 MB 
+      storage per state = 0.03 MB 
+      temporary storage = 0.01562 MB 
+Specialization is off
+Total storage per node  = 0.05 MB 
+      storage per state = 0.03 MB 
+      temporary storage = 0.01562 MB 
+Specialization is off
+Total storage per node  = 0.05 MB 
+      storage per state = 0.03 MB 
+      temporary storage = 0.01562 MB 
+Duration [ms] = 206, 22, 10, 15, 9, 9, 7, 9, 11, 9
+Avg time [ms] = 30, Std deviation = 58
+CONFIGURATION: n x m = 4x5, depth = 60, nodes = 32
+[  0] glbrank:      0 mynodeid:      0 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  1] glbrank:      1 mynodeid:      0 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  2] glbrank:      2 mynodeid:      1 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  3] glbrank:      3 mynodeid:      1 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  4] glbrank:      4 mynodeid:      2 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  5] glbrank:      5 mynodeid:      2 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  6] glbrank:      6 mynodeid:      3 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  7] glbrank:      7 mynodeid:      3 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  8] glbrank:      8 mynodeid:      4 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  9] glbrank:      9 mynodeid:      4 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 10] glbrank:     10 mynodeid:      5 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 11] glbrank:     11 mynodeid:      5 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 12] glbrank:     12 mynodeid:      6 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 13] glbrank:     13 mynodeid:      6 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 14] glbrank:     14 mynodeid:      7 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 15] glbrank:     15 mynodeid:      7 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 16] glbrank:     16 mynodeid:      8 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 17] glbrank:     17 mynodeid:      8 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 18] glbrank:     18 mynodeid:      9 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 19] glbrank:     19 mynodeid:      9 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 20] glbrank:     20 mynodeid:     10 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 21] glbrank:     21 mynodeid:     10 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 22] glbrank:     22 mynodeid:     11 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 23] glbrank:     23 mynodeid:     11 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 24] glbrank:     24 mynodeid:     12 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 25] glbrank:     25 mynodeid:     12 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 26] glbrank:     26 mynodeid:     13 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 27] glbrank:     27 mynodeid:     13 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 28] glbrank:     28 mynodeid:     14 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 29] glbrank:     29 mynodeid:     14 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 30] glbrank:     30 mynodeid:     15 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 31] glbrank:     31 mynodeid:     15 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 32] glbrank:     32 mynodeid:     16 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 33] glbrank:     33 mynodeid:     16 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 34] glbrank:     34 mynodeid:     17 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 35] glbrank:     35 mynodeid:     17 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 36] glbrank:     36 mynodeid:     18 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 37] glbrank:     37 mynodeid:     18 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 38] glbrank:     38 mynodeid:     19 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 39] glbrank:     39 mynodeid:     19 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 40] glbrank:     40 mynodeid:     20 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 41] glbrank:     41 mynodeid:     20 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 42] glbrank:     42 mynodeid:     21 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 43] glbrank:     43 mynodeid:     21 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 44] glbrank:     44 mynodeid:     22 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 45] glbrank:     45 mynodeid:     22 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 46] glbrank:     46 mynodeid:     23 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 47] glbrank:     47 mynodeid:     23 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 48] glbrank:     48 mynodeid:     24 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 49] glbrank:     49 mynodeid:     24 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 50] glbrank:     50 mynodeid:     25 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 51] glbrank:     51 mynodeid:     25 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 52] glbrank:     52 mynodeid:     26 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 53] glbrank:     53 mynodeid:     26 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 54] glbrank:     54 mynodeid:     27 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 55] glbrank:     55 mynodeid:     27 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 56] glbrank:     56 mynodeid:     28 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 57] glbrank:     57 mynodeid:     28 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 58] glbrank:     58 mynodeid:     29 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 59] glbrank:     59 mynodeid:     29 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 60] glbrank:     60 mynodeid:     30 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 61] glbrank:     61 mynodeid:     30 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 62] glbrank:     62 mynodeid:     31 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 63] glbrank:     63 mynodeid:     31 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+Specialization is off
+Total storage per node  = 0.75 MB 
+      storage per state = 0.50 MB 
+      temporary storage = 0.25000 MB 
+Specialization is off
+Total storage per node  = 0.75 MB 
+      storage per state = 0.50 MB 
+      temporary storage = 0.25000 MB 
+Specialization is off
+Total storage per node  = 0.75 MB 
+      storage per state = 0.50 MB 
+      temporary storage = 0.25000 MB 
+Specialization is off
+Total storage per node  = 0.75 MB 
+      storage per state = 0.50 MB 
+      temporary storage = 0.25000 MB 
+Specialization is off
+Total storage per node  = 0.75 MB 
+      storage per state = 0.50 MB 
+      temporary storage = 0.25000 MB 
+Specialization is off
+Total storage per node  = 0.75 MB 
+      storage per state = 0.50 MB 
+      temporary storage = 0.25000 MB 
+Specialization is off
+Total storage per node  = 0.75 MB 
+      storage per state = 0.50 MB 
+      temporary storage = 0.25000 MB 
+Specialization is off
+Total storage per node  = 0.75 MB 
+      storage per state = 0.50 MB 
+      temporary storage = 0.25000 MB 
+Specialization is off
+Total storage per node  = 0.75 MB 
+      storage per state = 0.50 MB 
+      temporary storage = 0.25000 MB 
+Specialization is off
+Total storage per node  = 0.75 MB 
+      storage per state = 0.50 MB 
+      temporary storage = 0.25000 MB 
+Duration [ms] = 135, 58, 63, 54, 64, 57, 62, 59, 61, 59
+Avg time [ms] = 67, Std deviation = 22
+CONFIGURATION: n x m = 5x5, depth = 20, nodes = 32
+[  0] glbrank:      0 mynodeid:      0 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  1] glbrank:      1 mynodeid:      0 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  2] glbrank:      2 mynodeid:      1 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  3] glbrank:      3 mynodeid:      1 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  4] glbrank:      4 mynodeid:      2 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  5] glbrank:      5 mynodeid:      2 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  6] glbrank:      6 mynodeid:      3 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  7] glbrank:      7 mynodeid:      3 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  8] glbrank:      8 mynodeid:      4 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  9] glbrank:      9 mynodeid:      4 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 10] glbrank:     10 mynodeid:      5 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 11] glbrank:     11 mynodeid:      5 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 12] glbrank:     12 mynodeid:      6 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 13] glbrank:     13 mynodeid:      6 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 14] glbrank:     14 mynodeid:      7 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 15] glbrank:     15 mynodeid:      7 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 16] glbrank:     16 mynodeid:      8 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 17] glbrank:     17 mynodeid:      8 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 18] glbrank:     18 mynodeid:      9 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 19] glbrank:     19 mynodeid:      9 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 20] glbrank:     20 mynodeid:     10 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 21] glbrank:     21 mynodeid:     10 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 22] glbrank:     22 mynodeid:     11 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 23] glbrank:     23 mynodeid:     11 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 24] glbrank:     24 mynodeid:     12 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 25] glbrank:     25 mynodeid:     12 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 26] glbrank:     26 mynodeid:     13 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 27] glbrank:     27 mynodeid:     13 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 28] glbrank:     28 mynodeid:     14 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 29] glbrank:     29 mynodeid:     14 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 30] glbrank:     30 mynodeid:     15 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 31] glbrank:     31 mynodeid:     15 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 32] glbrank:     32 mynodeid:     16 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 33] glbrank:     33 mynodeid:     16 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 34] glbrank:     34 mynodeid:     17 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 35] glbrank:     35 mynodeid:     17 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 36] glbrank:     36 mynodeid:     18 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 37] glbrank:     37 mynodeid:     18 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 38] glbrank:     38 mynodeid:     19 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 39] glbrank:     39 mynodeid:     19 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 40] glbrank:     40 mynodeid:     20 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 41] glbrank:     41 mynodeid:     20 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 42] glbrank:     42 mynodeid:     21 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 43] glbrank:     43 mynodeid:     21 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 44] glbrank:     44 mynodeid:     22 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 45] glbrank:     45 mynodeid:     22 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 46] glbrank:     46 mynodeid:     23 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 47] glbrank:     47 mynodeid:     23 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 48] glbrank:     48 mynodeid:     24 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 49] glbrank:     49 mynodeid:     24 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 50] glbrank:     50 mynodeid:     25 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 51] glbrank:     51 mynodeid:     25 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 52] glbrank:     52 mynodeid:     26 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 53] glbrank:     53 mynodeid:     26 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 54] glbrank:     54 mynodeid:     27 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 55] glbrank:     55 mynodeid:     27 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 56] glbrank:     56 mynodeid:     28 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 57] glbrank:     57 mynodeid:     28 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 58] glbrank:     58 mynodeid:     29 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 59] glbrank:     59 mynodeid:     29 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 60] glbrank:     60 mynodeid:     30 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 61] glbrank:     61 mynodeid:     30 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 62] glbrank:     62 mynodeid:     31 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 63] glbrank:     63 mynodeid:     31 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+Specialization is off
+Total storage per node  = 24.00 MB 
+      storage per state = 16.00 MB 
+      temporary storage = 8.00000 MB 
+Specialization is off
+Total storage per node  = 24.00 MB 
+      storage per state = 16.00 MB 
+      temporary storage = 8.00000 MB 
+Specialization is off
+Total storage per node  = 24.00 MB 
+      storage per state = 16.00 MB 
+      temporary storage = 8.00000 MB 
+Specialization is off
+Total storage per node  = 24.00 MB 
+      storage per state = 16.00 MB 
+      temporary storage = 8.00000 MB 
+Specialization is off
+Total storage per node  = 24.00 MB 
+      storage per state = 16.00 MB 
+      temporary storage = 8.00000 MB 
+Specialization is off
+Total storage per node  = 24.00 MB 
+      storage per state = 16.00 MB 
+      temporary storage = 8.00000 MB 
+Specialization is off
+Total storage per node  = 24.00 MB 
+      storage per state = 16.00 MB 
+      temporary storage = 8.00000 MB 
+Specialization is off
+Total storage per node  = 24.00 MB 
+      storage per state = 16.00 MB 
+      temporary storage = 8.00000 MB 
+Specialization is off
+Total storage per node  = 24.00 MB 
+      storage per state = 16.00 MB 
+      temporary storage = 8.00000 MB 
+Specialization is off
+Total storage per node  = 24.00 MB 
+      storage per state = 16.00 MB 
+      temporary storage = 8.00000 MB 
+Duration [ms] = 917, 584, 577, 571, 564, 578, 577, 565, 568, 566
+Avg time [ms] = 606, Std deviation = 103
+CONFIGURATION: n x m = 5x6, depth = 20, nodes = 32
+[  0] glbrank:      0 mynodeid:      0 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  1] glbrank:      1 mynodeid:      0 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  2] glbrank:      2 mynodeid:      1 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  3] glbrank:      3 mynodeid:      1 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  4] glbrank:      4 mynodeid:      2 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  5] glbrank:      5 mynodeid:      2 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  6] glbrank:      6 mynodeid:      3 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  7] glbrank:      7 mynodeid:      3 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  8] glbrank:      8 mynodeid:      4 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  9] glbrank:      9 mynodeid:      4 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 10] glbrank:     10 mynodeid:      5 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 11] glbrank:     11 mynodeid:      5 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 12] glbrank:     12 mynodeid:      6 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 13] glbrank:     13 mynodeid:      6 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 14] glbrank:     14 mynodeid:      7 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 15] glbrank:     15 mynodeid:      7 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 16] glbrank:     16 mynodeid:      8 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 17] glbrank:     17 mynodeid:      8 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 18] glbrank:     18 mynodeid:      9 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 19] glbrank:     19 mynodeid:      9 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 20] glbrank:     20 mynodeid:     10 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 21] glbrank:     21 mynodeid:     10 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 22] glbrank:     22 mynodeid:     11 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 23] glbrank:     23 mynodeid:     11 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 24] glbrank:     24 mynodeid:     12 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 25] glbrank:     25 mynodeid:     12 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 26] glbrank:     26 mynodeid:     13 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 27] glbrank:     27 mynodeid:     13 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 28] glbrank:     28 mynodeid:     14 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 29] glbrank:     29 mynodeid:     14 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 30] glbrank:     30 mynodeid:     15 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 31] glbrank:     31 mynodeid:     15 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 32] glbrank:     32 mynodeid:     16 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 33] glbrank:     33 mynodeid:     16 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 34] glbrank:     34 mynodeid:     17 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 35] glbrank:     35 mynodeid:     17 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 36] glbrank:     36 mynodeid:     18 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 37] glbrank:     37 mynodeid:     18 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 38] glbrank:     38 mynodeid:     19 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 39] glbrank:     39 mynodeid:     19 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 40] glbrank:     40 mynodeid:     20 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 41] glbrank:     41 mynodeid:     20 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 42] glbrank:     42 mynodeid:     21 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 43] glbrank:     43 mynodeid:     21 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 44] glbrank:     44 mynodeid:     22 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 45] glbrank:     45 mynodeid:     22 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 46] glbrank:     46 mynodeid:     23 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 47] glbrank:     47 mynodeid:     23 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 48] glbrank:     48 mynodeid:     24 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 49] glbrank:     49 mynodeid:     24 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 50] glbrank:     50 mynodeid:     25 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 51] glbrank:     51 mynodeid:     25 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 52] glbrank:     52 mynodeid:     26 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 53] glbrank:     53 mynodeid:     26 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 54] glbrank:     54 mynodeid:     27 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 55] glbrank:     55 mynodeid:     27 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 56] glbrank:     56 mynodeid:     28 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 57] glbrank:     57 mynodeid:     28 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 58] glbrank:     58 mynodeid:     29 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 59] glbrank:     59 mynodeid:     29 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 60] glbrank:     60 mynodeid:     30 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 61] glbrank:     61 mynodeid:     30 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 62] glbrank:     62 mynodeid:     31 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 63] glbrank:     63 mynodeid:     31 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+Specialization is off
+Total storage per node  = 768.00 MB 
+      storage per state = 512.00 MB 
+      temporary storage = 256.00000 MB 
+Specialization is off
+Total storage per node  = 768.00 MB 
+      storage per state = 512.00 MB 
+      temporary storage = 256.00000 MB 
+Specialization is off
+Total storage per node  = 768.00 MB 
+      storage per state = 512.00 MB 
+      temporary storage = 256.00000 MB 
+Specialization is off
+Total storage per node  = 768.00 MB 
+      storage per state = 512.00 MB 
+      temporary storage = 256.00000 MB 
+Specialization is off
+Total storage per node  = 768.00 MB 
+      storage per state = 512.00 MB 
+      temporary storage = 256.00000 MB 
+Specialization is off
+Total storage per node  = 768.00 MB 
+      storage per state = 512.00 MB 
+      temporary storage = 256.00000 MB 
+Specialization is off
+Total storage per node  = 768.00 MB 
+      storage per state = 512.00 MB 
+      temporary storage = 256.00000 MB 
+Specialization is off
+Total storage per node  = 768.00 MB 
+      storage per state = 512.00 MB 
+      temporary storage = 256.00000 MB 
+Specialization is off
+Total storage per node  = 768.00 MB 
+      storage per state = 512.00 MB 
+      temporary storage = 256.00000 MB 
+Specialization is off
+Total storage per node  = 768.00 MB 
+      storage per state = 512.00 MB 
+      temporary storage = 256.00000 MB 
+Duration [ms] = 23314, 23165, 25027, 24627, 23258, 24464, 23275, 25167, 23370, 24075
+Avg time [ms] = 23974, Std deviation = 752
+CONFIGURATION: n x m = 5x5, depth = 40, nodes = 32
+[  0] glbrank:      0 mynodeid:      0 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  1] glbrank:      1 mynodeid:      0 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  2] glbrank:      2 mynodeid:      1 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  3] glbrank:      3 mynodeid:      1 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  4] glbrank:      4 mynodeid:      2 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  5] glbrank:      5 mynodeid:      2 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  6] glbrank:      6 mynodeid:      3 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  7] glbrank:      7 mynodeid:      3 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  8] glbrank:      8 mynodeid:      4 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  9] glbrank:      9 mynodeid:      4 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 10] glbrank:     10 mynodeid:      5 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 11] glbrank:     11 mynodeid:      5 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 12] glbrank:     12 mynodeid:      6 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 13] glbrank:     13 mynodeid:      6 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 14] glbrank:     14 mynodeid:      7 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 15] glbrank:     15 mynodeid:      7 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 16] glbrank:     16 mynodeid:      8 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 17] glbrank:     17 mynodeid:      8 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 18] glbrank:     18 mynodeid:      9 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 19] glbrank:     19 mynodeid:      9 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 20] glbrank:     20 mynodeid:     10 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 21] glbrank:     21 mynodeid:     10 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 22] glbrank:     22 mynodeid:     11 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 23] glbrank:     23 mynodeid:     11 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 24] glbrank:     24 mynodeid:     12 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 25] glbrank:     25 mynodeid:     12 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 26] glbrank:     26 mynodeid:     13 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 27] glbrank:     27 mynodeid:     13 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 28] glbrank:     28 mynodeid:     14 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 29] glbrank:     29 mynodeid:     14 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 30] glbrank:     30 mynodeid:     15 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 31] glbrank:     31 mynodeid:     15 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 32] glbrank:     32 mynodeid:     16 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 33] glbrank:     33 mynodeid:     16 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 34] glbrank:     34 mynodeid:     17 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 35] glbrank:     35 mynodeid:     17 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 36] glbrank:     36 mynodeid:     18 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 37] glbrank:     37 mynodeid:     18 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 38] glbrank:     38 mynodeid:     19 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 39] glbrank:     39 mynodeid:     19 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 40] glbrank:     40 mynodeid:     20 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 41] glbrank:     41 mynodeid:     20 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 42] glbrank:     42 mynodeid:     21 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 43] glbrank:     43 mynodeid:     21 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 44] glbrank:     44 mynodeid:     22 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 45] glbrank:     45 mynodeid:     22 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 46] glbrank:     46 mynodeid:     23 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 47] glbrank:     47 mynodeid:     23 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 48] glbrank:     48 mynodeid:     24 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 49] glbrank:     49 mynodeid:     24 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 50] glbrank:     50 mynodeid:     25 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 51] glbrank:     51 mynodeid:     25 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 52] glbrank:     52 mynodeid:     26 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 53] glbrank:     53 mynodeid:     26 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 54] glbrank:     54 mynodeid:     27 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 55] glbrank:     55 mynodeid:     27 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 56] glbrank:     56 mynodeid:     28 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 57] glbrank:     57 mynodeid:     28 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 58] glbrank:     58 mynodeid:     29 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 59] glbrank:     59 mynodeid:     29 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 60] glbrank:     60 mynodeid:     30 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 61] glbrank:     61 mynodeid:     30 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 62] glbrank:     62 mynodeid:     31 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 63] glbrank:     63 mynodeid:     31 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+Specialization is off
+Total storage per node  = 24.00 MB 
+      storage per state = 16.00 MB 
+      temporary storage = 8.00000 MB 
+Specialization is off
+Total storage per node  = 24.00 MB 
+      storage per state = 16.00 MB 
+      temporary storage = 8.00000 MB 
+Specialization is off
+Total storage per node  = 24.00 MB 
+      storage per state = 16.00 MB 
+      temporary storage = 8.00000 MB 
+Specialization is off
+Total storage per node  = 24.00 MB 
+      storage per state = 16.00 MB 
+      temporary storage = 8.00000 MB 
+Specialization is off
+Total storage per node  = 24.00 MB 
+      storage per state = 16.00 MB 
+      temporary storage = 8.00000 MB 
+Specialization is off
+Total storage per node  = 24.00 MB 
+      storage per state = 16.00 MB 
+      temporary storage = 8.00000 MB 
+Specialization is off
+Total storage per node  = 24.00 MB 
+      storage per state = 16.00 MB 
+      temporary storage = 8.00000 MB 
+Specialization is off
+Total storage per node  = 24.00 MB 
+      storage per state = 16.00 MB 
+      temporary storage = 8.00000 MB 
+Specialization is off
+Total storage per node  = 24.00 MB 
+      storage per state = 16.00 MB 
+      temporary storage = 8.00000 MB 
+Specialization is off
+Total storage per node  = 24.00 MB 
+      storage per state = 16.00 MB 
+      temporary storage = 8.00000 MB 
+Duration [ms] = 1244, 1376, 1109, 1072, 1126, 1086, 1039, 1018, 1036, 1015
+Avg time [ms] = 1112, Std deviation = 109
+CONFIGURATION: n x m = 5x6, depth = 40, nodes = 32
+[  0] glbrank:      0 mynodeid:      0 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  1] glbrank:      1 mynodeid:      0 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  2] glbrank:      2 mynodeid:      1 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  3] glbrank:      3 mynodeid:      1 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  4] glbrank:      4 mynodeid:      2 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  5] glbrank:      5 mynodeid:      2 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  6] glbrank:      6 mynodeid:      3 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  7] glbrank:      7 mynodeid:      3 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  8] glbrank:      8 mynodeid:      4 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  9] glbrank:      9 mynodeid:      4 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 10] glbrank:     10 mynodeid:      5 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 11] glbrank:     11 mynodeid:      5 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 12] glbrank:     12 mynodeid:      6 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 13] glbrank:     13 mynodeid:      6 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 14] glbrank:     14 mynodeid:      7 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 15] glbrank:     15 mynodeid:      7 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 16] glbrank:     16 mynodeid:      8 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 17] glbrank:     17 mynodeid:      8 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 18] glbrank:     18 mynodeid:      9 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 19] glbrank:     19 mynodeid:      9 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 20] glbrank:     20 mynodeid:     10 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 21] glbrank:     21 mynodeid:     10 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 22] glbrank:     22 mynodeid:     11 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 23] glbrank:     23 mynodeid:     11 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 24] glbrank:     24 mynodeid:     12 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 25] glbrank:     25 mynodeid:     12 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 26] glbrank:     26 mynodeid:     13 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 27] glbrank:     27 mynodeid:     13 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 28] glbrank:     28 mynodeid:     14 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 29] glbrank:     29 mynodeid:     14 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 30] glbrank:     30 mynodeid:     15 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 31] glbrank:     31 mynodeid:     15 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 32] glbrank:     32 mynodeid:     16 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 33] glbrank:     33 mynodeid:     16 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 34] glbrank:     34 mynodeid:     17 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 35] glbrank:     35 mynodeid:     17 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 36] glbrank:     36 mynodeid:     18 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 37] glbrank:     37 mynodeid:     18 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 38] glbrank:     38 mynodeid:     19 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 39] glbrank:     39 mynodeid:     19 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 40] glbrank:     40 mynodeid:     20 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 41] glbrank:     41 mynodeid:     20 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 42] glbrank:     42 mynodeid:     21 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 43] glbrank:     43 mynodeid:     21 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 44] glbrank:     44 mynodeid:     22 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 45] glbrank:     45 mynodeid:     22 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 46] glbrank:     46 mynodeid:     23 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 47] glbrank:     47 mynodeid:     23 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 48] glbrank:     48 mynodeid:     24 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 49] glbrank:     49 mynodeid:     24 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 50] glbrank:     50 mynodeid:     25 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 51] glbrank:     51 mynodeid:     25 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 52] glbrank:     52 mynodeid:     26 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 53] glbrank:     53 mynodeid:     26 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 54] glbrank:     54 mynodeid:     27 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 55] glbrank:     55 mynodeid:     27 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 56] glbrank:     56 mynodeid:     28 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 57] glbrank:     57 mynodeid:     28 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 58] glbrank:     58 mynodeid:     29 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 59] glbrank:     59 mynodeid:     29 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 60] glbrank:     60 mynodeid:     30 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 61] glbrank:     61 mynodeid:     30 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 62] glbrank:     62 mynodeid:     31 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 63] glbrank:     63 mynodeid:     31 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+Specialization is off
+Total storage per node  = 768.00 MB 
+      storage per state = 512.00 MB 
+      temporary storage = 256.00000 MB 
+Specialization is off
+Total storage per node  = 768.00 MB 
+      storage per state = 512.00 MB 
+      temporary storage = 256.00000 MB 
+Specialization is off
+Total storage per node  = 768.00 MB 
+      storage per state = 512.00 MB 
+      temporary storage = 256.00000 MB 
+Specialization is off
+Total storage per node  = 768.00 MB 
+      storage per state = 512.00 MB 
+      temporary storage = 256.00000 MB 
+Specialization is off
+Total storage per node  = 768.00 MB 
+      storage per state = 512.00 MB 
+      temporary storage = 256.00000 MB 
+Specialization is off
+Total storage per node  = 768.00 MB 
+      storage per state = 512.00 MB 
+      temporary storage = 256.00000 MB 
+Specialization is off
+Total storage per node  = 768.00 MB 
+      storage per state = 512.00 MB 
+      temporary storage = 256.00000 MB 
+Specialization is off
+Total storage per node  = 768.00 MB 
+      storage per state = 512.00 MB 
+      temporary storage = 256.00000 MB 
+Specialization is off
+Total storage per node  = 768.00 MB 
+      storage per state = 512.00 MB 
+      temporary storage = 256.00000 MB 
+Specialization is off
+Total storage per node  = 768.00 MB 
+      storage per state = 512.00 MB 
+      temporary storage = 256.00000 MB 
+Duration [ms] = 42938, 42625, 41950, 42829, 41734, 74785, 42044, 40102, 41208, 42354
+Avg time [ms] = 45256, Std deviation = 9875
+CONFIGURATION: n x m = 5x5, depth = 60, nodes = 32
+[  0] glbrank:      0 mynodeid:      0 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  1] glbrank:      1 mynodeid:      0 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  2] glbrank:      2 mynodeid:      1 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  3] glbrank:      3 mynodeid:      1 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  4] glbrank:      4 mynodeid:      2 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  5] glbrank:      5 mynodeid:      2 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  6] glbrank:      6 mynodeid:      3 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  7] glbrank:      7 mynodeid:      3 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  8] glbrank:      8 mynodeid:      4 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  9] glbrank:      9 mynodeid:      4 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 10] glbrank:     10 mynodeid:      5 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 11] glbrank:     11 mynodeid:      5 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 12] glbrank:     12 mynodeid:      6 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 13] glbrank:     13 mynodeid:      6 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 14] glbrank:     14 mynodeid:      7 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 15] glbrank:     15 mynodeid:      7 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 16] glbrank:     16 mynodeid:      8 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 17] glbrank:     17 mynodeid:      8 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 18] glbrank:     18 mynodeid:      9 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 19] glbrank:     19 mynodeid:      9 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 20] glbrank:     20 mynodeid:     10 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 21] glbrank:     21 mynodeid:     10 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 22] glbrank:     22 mynodeid:     11 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 23] glbrank:     23 mynodeid:     11 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 24] glbrank:     24 mynodeid:     12 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 25] glbrank:     25 mynodeid:     12 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 26] glbrank:     26 mynodeid:     13 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 27] glbrank:     27 mynodeid:     13 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 28] glbrank:     28 mynodeid:     14 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 29] glbrank:     29 mynodeid:     14 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 30] glbrank:     30 mynodeid:     15 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 31] glbrank:     31 mynodeid:     15 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 32] glbrank:     32 mynodeid:     16 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 33] glbrank:     33 mynodeid:     16 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 34] glbrank:     34 mynodeid:     17 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 35] glbrank:     35 mynodeid:     17 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 36] glbrank:     36 mynodeid:     18 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 37] glbrank:     37 mynodeid:     18 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 38] glbrank:     38 mynodeid:     19 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 39] glbrank:     39 mynodeid:     19 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 40] glbrank:     40 mynodeid:     20 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 41] glbrank:     41 mynodeid:     20 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 42] glbrank:     42 mynodeid:     21 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 43] glbrank:     43 mynodeid:     21 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 44] glbrank:     44 mynodeid:     22 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 45] glbrank:     45 mynodeid:     22 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 46] glbrank:     46 mynodeid:     23 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 47] glbrank:     47 mynodeid:     23 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 48] glbrank:     48 mynodeid:     24 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 49] glbrank:     49 mynodeid:     24 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 50] glbrank:     50 mynodeid:     25 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 51] glbrank:     51 mynodeid:     25 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 52] glbrank:     52 mynodeid:     26 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 53] glbrank:     53 mynodeid:     26 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 54] glbrank:     54 mynodeid:     27 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 55] glbrank:     55 mynodeid:     27 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 56] glbrank:     56 mynodeid:     28 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 57] glbrank:     57 mynodeid:     28 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 58] glbrank:     58 mynodeid:     29 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 59] glbrank:     59 mynodeid:     29 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 60] glbrank:     60 mynodeid:     30 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 61] glbrank:     61 mynodeid:     30 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 62] glbrank:     62 mynodeid:     31 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 63] glbrank:     63 mynodeid:     31 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+Specialization is off
+Total storage per node  = 24.00 MB 
+      storage per state = 16.00 MB 
+      temporary storage = 8.00000 MB 
+Specialization is off
+Total storage per node  = 24.00 MB 
+      storage per state = 16.00 MB 
+      temporary storage = 8.00000 MB 
+Specialization is off
+Total storage per node  = 24.00 MB 
+      storage per state = 16.00 MB 
+      temporary storage = 8.00000 MB 
+Specialization is off
+Total storage per node  = 24.00 MB 
+      storage per state = 16.00 MB 
+      temporary storage = 8.00000 MB 
+Specialization is off
+Total storage per node  = 24.00 MB 
+      storage per state = 16.00 MB 
+      temporary storage = 8.00000 MB 
+Specialization is off
+Total storage per node  = 24.00 MB 
+      storage per state = 16.00 MB 
+      temporary storage = 8.00000 MB 
+Specialization is off
+Total storage per node  = 24.00 MB 
+      storage per state = 16.00 MB 
+      temporary storage = 8.00000 MB 
+Specialization is off
+Total storage per node  = 24.00 MB 
+      storage per state = 16.00 MB 
+      temporary storage = 8.00000 MB 
+Specialization is off
+Total storage per node  = 24.00 MB 
+      storage per state = 16.00 MB 
+      temporary storage = 8.00000 MB 
+Specialization is off
+Total storage per node  = 24.00 MB 
+      storage per state = 16.00 MB 
+      temporary storage = 8.00000 MB 
+Duration [ms] = 1787, 1490, 1599, 1620, 1443, 1507, 1583, 1523, 1495, 1483
+Avg time [ms] = 1553, Std deviation = 94
+CONFIGURATION: n x m = 5x6, depth = 60, nodes = 32
+[  0] glbrank:      0 mynodeid:      0 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  1] glbrank:      1 mynodeid:      0 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  2] glbrank:      2 mynodeid:      1 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  3] glbrank:      3 mynodeid:      1 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  4] glbrank:      4 mynodeid:      2 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  5] glbrank:      5 mynodeid:      2 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  6] glbrank:      6 mynodeid:      3 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  7] glbrank:      7 mynodeid:      3 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  8] glbrank:      8 mynodeid:      4 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[  9] glbrank:      9 mynodeid:      4 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 10] glbrank:     10 mynodeid:      5 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 11] glbrank:     11 mynodeid:      5 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 12] glbrank:     12 mynodeid:      6 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 13] glbrank:     13 mynodeid:      6 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 14] glbrank:     14 mynodeid:      7 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 15] glbrank:     15 mynodeid:      7 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 16] glbrank:     16 mynodeid:      8 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 17] glbrank:     17 mynodeid:      8 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 18] glbrank:     18 mynodeid:      9 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 19] glbrank:     19 mynodeid:      9 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 20] glbrank:     20 mynodeid:     10 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 21] glbrank:     21 mynodeid:     10 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 22] glbrank:     22 mynodeid:     11 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 23] glbrank:     23 mynodeid:     11 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 24] glbrank:     24 mynodeid:     12 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 25] glbrank:     25 mynodeid:     12 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 26] glbrank:     26 mynodeid:     13 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 27] glbrank:     27 mynodeid:     13 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 28] glbrank:     28 mynodeid:     14 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 29] glbrank:     29 mynodeid:     14 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 30] glbrank:     30 mynodeid:     15 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 31] glbrank:     31 mynodeid:     15 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 32] glbrank:     32 mynodeid:     16 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 33] glbrank:     33 mynodeid:     16 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 34] glbrank:     34 mynodeid:     17 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 35] glbrank:     35 mynodeid:     17 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 36] glbrank:     36 mynodeid:     18 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 37] glbrank:     37 mynodeid:     18 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 38] glbrank:     38 mynodeid:     19 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 39] glbrank:     39 mynodeid:     19 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 40] glbrank:     40 mynodeid:     20 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 41] glbrank:     41 mynodeid:     20 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 42] glbrank:     42 mynodeid:     21 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 43] glbrank:     43 mynodeid:     21 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 44] glbrank:     44 mynodeid:     22 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 45] glbrank:     45 mynodeid:     22 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 46] glbrank:     46 mynodeid:     23 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 47] glbrank:     47 mynodeid:     23 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 48] glbrank:     48 mynodeid:     24 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 49] glbrank:     49 mynodeid:     24 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 50] glbrank:     50 mynodeid:     25 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 51] glbrank:     51 mynodeid:     25 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 52] glbrank:     52 mynodeid:     26 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 53] glbrank:     53 mynodeid:     26 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 54] glbrank:     54 mynodeid:     27 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 55] glbrank:     55 mynodeid:     27 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 56] glbrank:     56 mynodeid:     28 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 57] glbrank:     57 mynodeid:     28 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 58] glbrank:     58 mynodeid:     29 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 59] glbrank:     59 mynodeid:     29 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 60] glbrank:     60 mynodeid:     30 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 61] glbrank:     61 mynodeid:     30 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 62] glbrank:     62 mynodeid:     31 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+[ 63] glbrank:     63 mynodeid:     31 nnodes:     32 ranks/node:      2 threads/rank:  1 aff:          KMP_AFFINITY=compact,1,0,granularity=fine --useful
+Specialization is off
+Total storage per node  = 768.00 MB 
+      storage per state = 512.00 MB 
+      temporary storage = 256.00000 MB 
+Specialization is off
+Total storage per node  = 768.00 MB 
+      storage per state = 512.00 MB 
+      temporary storage = 256.00000 MB 
+Specialization is off
+Total storage per node  = 768.00 MB 
+      storage per state = 512.00 MB 
+      temporary storage = 256.00000 MB 
+Specialization is off
+Total storage per node  = 768.00 MB 
+      storage per state = 512.00 MB 
+      temporary storage = 256.00000 MB 
+Specialization is off
+Total storage per node  = 768.00 MB 
+      storage per state = 512.00 MB 
+      temporary storage = 256.00000 MB 
+Specialization is off
+Total storage per node  = 768.00 MB 
+      storage per state = 512.00 MB 
+      temporary storage = 256.00000 MB 
+Specialization is off
+Total storage per node  = 768.00 MB 
+      storage per state = 512.00 MB 
+      temporary storage = 256.00000 MB 
+Specialization is off
+Total storage per node  = 768.00 MB 
+      storage per state = 512.00 MB 
+      temporary storage = 256.00000 MB 
+Specialization is off
+Total storage per node  = 768.00 MB 
+      storage per state = 512.00 MB 
+      temporary storage = 256.00000 MB 
+Specialization is off
+Total storage per node  = 768.00 MB 
+      storage per state = 512.00 MB 
+      temporary storage = 256.00000 MB 
+Duration [ms] = 61750, 59412, 59737, 61936, 59893, 61031, 60256, 60850, 60210, 60949
+Avg time [ms] = 60602, Std deviation = 800
+ 
+Batch Job Summary Report for Job "script_32.sh" (14229498) on daint
+-----------------------------------------------------------------------------------------------------
+             Submit            Eligible               Start                 End    Elapsed  Timelimit 
+------------------- ------------------- ------------------- ------------------- ---------- ---------- 
+2019-05-24T13:38:54 2019-05-24T13:38:54 2019-05-24T13:39:58 2019-05-24T14:03:44   00:23:46   03:00:00 
+-----------------------------------------------------------------------------------------------------
+Username    Account     Partition   NNodes   Energy
+----------  ----------  ----------  ------  --------------
+mazzolag    csstaff     normal          32    5.92M joules
+ 
+This job did not utilize any GPUs
+ 
+----------------------------------------------------------
+Scratch File System        Files       Quota
+--------------------  ----------  ----------
+/scratch/snx3000           19068     1000000
+ 

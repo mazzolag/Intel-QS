@@ -1,0 +1,36 @@
+CONFIGURATION: n x m = 4x4, depth = 20, nodes = 8
+
+--------------------------------
+CONFIGURATION: n x m = 4x5, depth = 20, nodes = 8
+
+--------------------------------
+CONFIGURATION: n x m = 4x4, depth = 40, nodes = 8
+
+--------------------------------
+CONFIGURATION: n x m = 4x5, depth = 40, nodes = 8
+
+--------------------------------
+CONFIGURATION: n x m = 4x4, depth = 60, nodes = 8
+
+--------------------------------
+CONFIGURATION: n x m = 4x5, depth = 60, nodes = 8
+
+--------------------------------
+CONFIGURATION: n x m = 5x5, depth = 20, nodes = 8
+
+--------------------------------
+CONFIGURATION: n x m = 5x6, depth = 20, nodes = 8
+
+--------------------------------
+CONFIGURATION: n x m = 5x5, depth = 40, nodes = 8
+
+--------------------------------
+CONFIGURATION: n x m = 5x6, depth = 40, nodes = 8
+
+--------------------------------
+CONFIGURATION: n x m = 5x5, depth = 60, nodes = 8
+
+--------------------------------
+CONFIGURATION: n x m = 5x6, depth = 60, nodes = 8
+
+--------------------------------
